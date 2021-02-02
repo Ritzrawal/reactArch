@@ -6,10 +6,10 @@ const initialstate = {
     newdrawer: [],
     loadings: false,
 };
-import {LOGIN} from '../constant';
+// import {LOGIN} from '../constant';
 const loginReducer = (state = initialstate, action) => {
     switch (action.type) {
-    case LOGIN:
+    case "LOGIN":
         return {
             ...state,
             loadings: true,
