@@ -1,0 +1,42 @@
+.OuterTextContainer{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+   font-size: 1.5em;
+   line-height: 20px;
+  color: #003580;
+}
+.ButtonContainer{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 300px;
+}
+
+.CardComponent{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.FormCustomize{ 
+
+}
+.InputOuterStyle{
+height: 60px;
+}
+.InputOuterStyle::placeholder{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+   line-height: 20px;
+}
+.InputCustomize{
+    height: 100%!important;
+}
+.CheckBoxContainer{
+    margin-top: 2%;
+}

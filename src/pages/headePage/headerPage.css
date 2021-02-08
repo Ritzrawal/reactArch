@@ -1,0 +1,70 @@
+.NavbarIcon{
+    background-color:  #234476;
+    ;
+    height: 100%;
+}
+.HeaderComponent{
+    width: 80%;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.HomevbarComponent{
+    margin-left: 5%;
+}
+.HeaderItemComponent{
+    width: 50%;
+    margin-left: 2%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+
+}
+.NavTextCustomize{
+    margin-left: 2%;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+
+}
+.HeaderTextCustomize{
+font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 1.5em;
+line-height: 20px;
+color: #FFFFFF;
+}
+.HomebarTextComponent{
+font-family: "Montserrat";
+font-style: normal;
+font-weight: 600;
+font-size: 2em;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+.SignupButtonContainer{
+    margin-left: 2%;
+}
+.HeaderText{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 33px;
+    /* identical to box height */
+    
+    letter-spacing: -0.02em;
+    
+    color: #FFFFFF;
+}

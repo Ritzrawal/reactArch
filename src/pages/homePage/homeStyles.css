@@ -1,0 +1,30 @@
+.LowerMainContainer{
+width: 100%;
+height: 30vh;
+background-color:green ;
+}
+.LowerContainer{
+
+    height: 100%;
+    background-image: url('../../assets/images/bg.png');
+     width:100%;
+    height:100%;
+    background-size: 100% 100%;
+    background-repeat:no-repeat ;
+
+}
+.LowerContinerDisplay{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.SearchCUstomize{
+    width: 70%;
+    position: absolute;
+    top:30%;
+    background-color: red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

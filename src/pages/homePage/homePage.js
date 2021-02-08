@@ -1,10 +1,16 @@
 import React from 'react'
-import LoginPage from '../loginPage/loginPage'
+import HeaderPage from '../headePage/headerPage'
+import LowerHomepage from './lowerHomepage'
 const  HomePage=()=> {
     return (
         <div>
-            Hello Homepage 
-            <LoginPage/>
+            <HeaderPage/>
+            <div>
+            <LowerHomepage/>    
+            </div>
+          
+            
+          
         </div>
     )
 }
