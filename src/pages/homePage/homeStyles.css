@@ -1,30 +1,128 @@
-.LowerMainContainer{
-width: 100%;
-height: 30vh;
-background-color:green ;
+.HomeMainContainer{
+    width: 100%;
+    height: 100vh;
+    /* background-color: teal; */
 }
-.LowerContainer{
-
-    height: 100%;
-    background-image: url('../../assets/images/bg.png');
-     width:100%;
-    height:100%;
+.BackgrundImageContainer{
+    height: 30vh;
+    /* background-color: tomato; */
+}
+.BackGroundImage{
+    background-image: url('../../assets//images/background.png');
     background-size: 100% 100%;
     background-repeat:no-repeat ;
+    z-index: 10;
+    height: 100%;
+}
+.SearchMainContainer{
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: green; */
+}
+.ButtonGroupComponent{
+    height: 60px;
+    width: 350px ;
+  
+    /* background-color:red; */
+    /* color: red; */
+}
+.ButtonGroupComponentCat{
+    height: 50px;
+    width: 600px;
+}
+.ButtonClass{
+    background-color:#003580 !important;
+    color: #FFFF;
+    color: #2EC2E2!important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.ButtonClassCat{
+    background-color:#003580 !important;
+    color: #FFFF;
+    color: #2EC2E2!important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+.SearchInnerComponent{
+    width:70%
+}
+.CardOuterComponent{
+    margin-top: 100px;
 
 }
-.LowerContinerDisplay{
-    height: 100%;
+.RecomandedHotel{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 50px;
+    /* margin-top: 100px; */
 }
-.SearchCUstomize{
+.RecomHotelStyling{
+    color: #2EC2E2!important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+}
+.CardDisplaying{
     width: 70%;
-    position: absolute;
-    top:30%;
-    background-color: red;
-    height: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.BusComponentDisplay{
+    flex-direction: column;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* footer csss */
+.Footer {
+    background-color: #1f5f79;
+    padding: 80px 0;
+    margin-top: 10%;
+    position: relative;
+    display: block;
+    z-index: 1
+}
+.Footerbefore::before {
+   content: url('../../assets/images/footerbefore.png');
+    height: 120px;
+    left: 0;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -40px;
+    width: 120px;
+    z-index: 2;
+}
+.ContainerFotter {
+    padding-right: 15px;
+    color: #649bb7 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Copyrights {
+    padding: 30px 0;
+    position: relative;
+    display: block;
+    background-color: #18495f;
 }

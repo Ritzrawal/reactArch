@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 30%;
+    height: 30vh;
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .FormCustomize{ 
@@ -39,4 +39,29 @@ height: 60px;
 }
 .CheckBoxContainer{
     margin-top: 2%;
+    width: 90%;
 }
+.LowerFlightButton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.Passenger{
+    margin-right: 20px;
+}
+.PassengerButton{
+    display: flex;
+    margin-left: 30px;
+   
+    /* margin-top: 20px; */
+}
+.ButtonSearch{
+    background-color:#003580 !important ;
+    width: 150px;
+    height: 50px;
+}
+
+/* styling for card component */

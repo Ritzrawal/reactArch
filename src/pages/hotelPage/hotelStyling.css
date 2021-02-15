@@ -1,0 +1,15 @@
+.HotelSearchMainConatiner{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.HotelCardMapContainer{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.HotelInnerContainer{
+    width: 70%;
+}

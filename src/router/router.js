@@ -4,18 +4,23 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import HotelTypeComponent from '../component/hotel/hotelTypeCard'
+import SearchDisplayPage from '../pages/hotelPage/searchDisplayPage'
+import AirlineSeaarchPage from '../pages/airlinesPage/airSearchPage'
 import Homepage from '../pages/homePage/homePage'
+import BusSeaarchPage from '../pages/busPage/busSearchPage'
  const RouterConfiguration=() =>{
   return (
     <Router>
         <Switch>
-          <Route path="/" component={Homepage} />
-          <Route path="/login" component={Homepage} />
-          <Route path="/signup" component={Homepage} />
-          <Route path="/hotel" component={Homepage} />
-          <Route path="/flight" component={Homepage} />
-          <Route path="/bus" component={Homepage} />
-          <Route path="/hotel" component={Homepage} />
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/login" component={Homepage} />
+          <Route exact path="/signup" component={Homepage} />
+          <Route exact path="/hotel" component={HotelTypeComponent} />
+          <Route exact path="/hotel/search" component={SearchDisplayPage} />
+          <Route exact path="/flight" component={AirlineSeaarchPage} />
+          <Route exact path="/bus" component={BusSeaarchPage} />
+          <Route exact path="/hotel" component={Homepage} />
          
         </Switch>
     </Router>

@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderPage from '../headePage/headerPage'
+import FooterComponent from './fotterPage'
 import LowerHomepage from './lowerHomepage'
 const  HomePage=()=> {
     return (
@@ -8,7 +9,8 @@ const  HomePage=()=> {
             <div>
             <LowerHomepage/>    
             </div>
-          
+            
+         
             
           
         </div>

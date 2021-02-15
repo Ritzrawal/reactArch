@@ -1,23 +1,24 @@
 import React from 'react';
 import PropType from 'prop-types'
+import './button.css'
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  CardTitle, CardSubtitle
 } from 'reactstrap';
 
 const CardComponent = ({name,image}) => {
   return (
-    <div>
-      <Card>
-        <CardImg style={{width:'100%'}} src={image} alt="Card image cap" />
+   
+      <Card className="CardStyling">
+        <CardImg className="CardImageStyling" src={image} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">{name}</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button>Button</Button>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">4/5</CardSubtitle>
+          <CardText>From US$132</CardText>
+          
         </CardBody>
       </Card>
-    </div>
+   
   );
 };
 
