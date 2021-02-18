@@ -1,1 +1,3 @@
 export const LOGIN="LOGIN";
+export const SWITCH_INACTIVE="SWITCH_INACTIVE"
+export const SWITCH_ACTIVE="SWITCH_ACTIVE"

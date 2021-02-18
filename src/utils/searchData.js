@@ -2,6 +2,7 @@ const SearchData=[
     {
     id:1,
     name:'hello card ',
+    facility:"Amenities",
     airname:"Air USA",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
@@ -14,6 +15,7 @@ const SearchData=[
 {
     id:2,
     name:'hello card ',
+    facility:"Activities",
     airname:"British Airways",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
@@ -27,6 +29,7 @@ const SearchData=[
     id:3,
     name:'hello card ',
     airname:"Air Korea",
+    facility:"Check-in & check-out ",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     hotel:'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -39,6 +42,7 @@ const SearchData=[
     id:4,
     name:'hello card ',
     airname:"Air Canada",
+    facility:"Internet",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     hotel:'https://specials-images.forbesimg.com/imageserve/5ec567daf2098c0006c6036e/960x0.jpg?fit=scale',
@@ -50,6 +54,7 @@ const SearchData=[
     id:5,
     name:'hello card ',
     airname:"Air Canada",
+    facility:"Services",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     hotel:'https://mazharmemon.files.wordpress.com/2018/01/safari-court-hotel-pool.jpg',
@@ -62,6 +67,7 @@ const SearchData=[
     id:6,
     name:'hello card ',
     airname:"Air Canada",
+    facility:"Parking",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROPENLCdOsCcBwE_v8YbKFIDzdsOQoZIDyQ&usqp=CAU',
@@ -73,6 +79,8 @@ const SearchData=[
 {
     id:7,
     name:'hello card ',
+    facility:"Parking",
+
     description:"Neplove web app description",
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
@@ -85,6 +93,7 @@ const SearchData=[
 {
     id:8,
     name:'hello card ',
+    facility:"Parking",
     description:"Neplove web app description",
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
@@ -97,6 +106,8 @@ const SearchData=[
     id:9,
     name:'hello card ',
     airname:"Nepal Airlines",
+    facility:"Parking",
+
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
@@ -109,6 +120,7 @@ const SearchData=[
     id:10,
     name:'Air Canada ',
     airname:"Air China",
+    facility:"Parking",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     air:'https://www.webdesignerdepot.com/cdn-origin/uploads/2009/03/aircanada.gif',
@@ -122,6 +134,8 @@ const SearchData=[
     id:11,
     name:'hello card ',
     airname:"Indigo",
+    facility:"Parking",
+
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
@@ -135,6 +149,7 @@ const SearchData=[
     id:12,
     name:'hello card ',
     airname:"Buddha Air",
+    facility:"Parking",
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',

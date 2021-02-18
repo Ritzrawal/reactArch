@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import {connect} from 'react-redux'
 import { Button, ButtonGroup } from 'reactstrap'
+import {switchActive,switchInActive} from '../../store/action/loginAction'
 import './button.css'
 const buttontitle = [
 	{
@@ -24,9 +26,16 @@ const SwitchButtonComponent = (props) => {
 	}
 	const onSideBtnClick = (e) => {
         console.log("hello" ,props)
-        props.onClickSwitch(e)
+		
 		const name = e.target.name
 		setActiveButton(name)
+		if(name==='One Way'){
+			props.switchInActive()
+		}
+		else{
+			props.switchActive()
+		}
+
           
 	}
 	return (
@@ -52,4 +61,4 @@ const SwitchButtonComponent = (props) => {
 	)
 }
 
-export default SwitchButtonComponent
+export default connect(null,{switchActive,switchInActive}) (SwitchButtonComponent)

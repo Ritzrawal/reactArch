@@ -3,11 +3,22 @@ import React,{useState} from 'react'
 import { Card,Form,Row,Col,FormGroup,Input,Label,Button,ButtonGroup } from 'reactstrap';
 import './componentstyle.css'
 import SwitchButtonComponent from './common/switchButton'
-
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-
+import { connect } from 'react-redux';
+const buttontitle = [
+	{
+		name: 'One Way',
+		value: 'One Way',
+	},
+	{
+		name: 'Round Trip',
+		value: 'Round Trip',
+	},
+]
 const  SearchFlightComponent=(props) =>{
   const [lastClicked, setLastClicked] = useState(null);
+  const [activeButton, setActiveButton] = useState(buttontitle[0].name)
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
     const [selected, setSelected] = useState(false)
     const toggle = () => setDropdownOpen(prevState => !prevState);
@@ -15,15 +26,11 @@ const  SearchFlightComponent=(props) =>{
 
     console.log('props',props)
 
-    const onClickSwitch = () => {
-        setSelected(!selected)
-          
-	}
     return (
        
     <Card className="CardComponent">
         <div className="ButtonContainer">
-        <SwitchButtonComponent onClickSwitch={onClickSwitch}/>
+        <SwitchButtonComponent />
         </div>
         <Form  className="FormCustomize">
       <Row form>
@@ -42,7 +49,7 @@ const  SearchFlightComponent=(props) =>{
             <Input className="InputCustomize" type="text" name="text" placeholder="Depart" />
           </FormGroup>
         </Col>
-          {selected===false?(
+          {props.visible?(
    <Col md={2}>
     <FormGroup className="InputOuterStyle">
      <Input className="InputCustomize" type="text" name="text" placeholder="Return" />
@@ -91,4 +98,8 @@ const  SearchFlightComponent=(props) =>{
        
     )
 }
-export default SearchFlightComponent;
+const mapStateToProps = (state) => ({
+	visible: state.loginReducer.visible,
+})
+
+export default connect(mapStateToProps,null) (SearchFlightComponent);

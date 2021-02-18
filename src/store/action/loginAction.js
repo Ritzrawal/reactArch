@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {LOGIN} from '../constant';
+import {LOGIN,SWITCH_ACTIVE,SWITCH_INACTIVE} from '../constant';
 
 const baseUrl = 'https://www.test.com';
 
@@ -14,3 +14,15 @@ export const loginAction = () => async (dispatch) => {
         })
         .catch((err) => console.log('err' + err));
 };
+export const switchActive=() =>async(dispatch)=>{
+    dispatch({
+        type:SWITCH_ACTIVE
+    })
+
+}
+export const switchInActive=() =>async(dispatch)=>{
+    dispatch({
+        type:SWITCH_INACTIVE
+    })
+
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faAngleDown,faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import PropType from "prop-types";
+import{switchActive} from '../../store/action/loginAction'
+import {connect} from 'react-redux'
 import {
   Card,
   CardImg,
@@ -12,7 +14,12 @@ import {
   Button
 } from "reactstrap";
 import "./hotelComponent.css";
-const HotelCardSearch = ({ name, image }) => {
+const HotelCardSearch = ({ name, image,switchActive }) => {
+
+  const onShowDetails=()=>{
+    switchActive()
+    
+  }
   return (
     <Card className="CardStylingHotel">
       <div className="MainCardContainer">
@@ -97,7 +104,7 @@ const HotelCardSearch = ({ name, image }) => {
               <div className="RoomRightHalf">
               <div className="PriceRoomTYpe">$91</div>
               <div className="ViewBotton">
-                  <Button className="ButtonCustomize">View
+                  <Button className="ButtonCustomize" onClick={onShowDetails}>View
                   <FontAwesomeIcon className="IconCustomize" icon={faAngleRight}/>
                   </Button>
               </div>
@@ -108,7 +115,7 @@ const HotelCardSearch = ({ name, image }) => {
        
       </div>
       <div className="ShowMoreContainer">
-            <Button className="ShowmoreButton">Show more
+            <Button className="ShowmoreButton" onClick={onShowDetails}>Show more
             <FontAwesomeIcon  className="IconCustomize" icon={faAngleDown}/>
             </Button>
 
@@ -117,7 +124,7 @@ const HotelCardSearch = ({ name, image }) => {
   );
 };
 
-export default HotelCardSearch;
+export default connect(null,{switchActive}) (HotelCardSearch);
 HotelCardSearch.defaultProps = {
   name: "Card Component",
   image:
