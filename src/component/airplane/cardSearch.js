@@ -8,7 +8,11 @@ import {
   faLongArrowAltRight
 } from "@fortawesome/free-solid-svg-icons";
 import './airplane.css'
-const  AirSearchCompnent=({image,details,title})=> {
+const  AirSearchCompnent=({image,details,title,onDisplay})=> {
+
+    const onDisplayCard=()=>{
+        onDisplay()
+    }
     return (
         <Card className="AirCardComponent">
             <div className="AirCardContainer">
@@ -42,7 +46,7 @@ const  AirSearchCompnent=({image,details,title})=> {
                 <div className="TotalPrice">
                      RS 5555
                 </div>
-                <Button className="Viewfare">View Fares</Button>
+                <Button  onClick={onDisplayCard} className="Viewfare">View Fares</Button>
                 </div>
 
                 </div>
@@ -51,7 +55,7 @@ const  AirSearchCompnent=({image,details,title})=> {
             <div className="LowerFlightDetail">
                 <div className="FlightDetils">{details}</div>
                
-                <FontAwesomeIcon className="IconCustomizeMore" size="2x" icon={faAngleDown} />
+                <FontAwesomeIcon className="IconCustomizeMore" size="2x" icon={faAngleDown} onClick={onDisplayCard}/>
               
 
             </div>

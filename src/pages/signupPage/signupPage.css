@@ -1,0 +1,241 @@
+.SignupMainContainer {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .InnerMainContainer {
+    width: 50%;
+  }
+   .LoginRightHalfContainer img {
+     margin-top: auto;
+     width: 100%;
+     height: 182px;
+   }
+   .LoginRightHalfContainer h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 47px;
+    line-height: 57px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+   }
+   .signup-para p:first-child {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #2EC2E2;
+   }
+   .signup-para p:last-child {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156.1%;
+    color: #E3E9F1;
+   }
+    .MainContainer{
+      flex-grow: .5;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .CheckBoxText_blue {
+      color: rgb(46, 194, 226) !important;
+    }
+    .InnerMainContainer{
+      width: 50%;
+  
+      /* background-color: saddlebrown; */
+    }
+    .TitleTextConatiner{
+      margin-top: 35px;
+    }
+    .TitleText{
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 33px;
+   letter-spacing: -0.02em;
+  
+    color: #234476;
+  }
+  .SignUpTextComponent {
+    margin-top: 20%;
+  }
+  .SignUpText {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+  
+    letter-spacing: -0.03em;
+  
+    color: #162a49;
+  }
+  .AccountTypeContainer {
+    margin-top: 10px;
+  }
+  .AccountTypeText {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #808fa6;
+  }
+  .GoogleLoginButton {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid #f0f6f8;
+    box-sizing: border-box;
+    border-radius: 50px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 18px;
+    text-align: center;
+  
+    color: #162a49 !important;
+  }
+  .GoogleButtonContainer {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* background-color: green; */
+  }
+  .DivideLine {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .LeftHalfDivider {
+    border-bottom: 1px solid #e1e5ec;
+    width: 40%;
+  }
+  .DividerText {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #dadde2;
+  }
+  .RightHalfDivider {
+    border-bottom: 1px solid #e1e5ec;
+    width: 40%;
+  }
+  
+  .CheckBoxCustomize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CheckBoxText {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #5e7291;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .ChecBoxContainer {
+    display: flex;
+    /* justify-content: center;
+    margin-right: 30%; */
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  .termsOfUseCheck {
+    text-align: left;
+  }
+  .LabelCustomizer {
+    font-family: 'Montserrat', sans-serif;
+    color: #808fa6;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .ButtonContainer {
+  }
+  .FormGroupCustomize {
+    height: 60px;
+    background: #ffffff;
+    border: 2px solid #e3e9f1;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  .ButtonCustomize {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .ButtonCustomizeStyling {
+    height: 50px;
+    width: 100%;
+  }
+  .UsernameCustomize {
+    display: flex;
+    flex-direction: row;
+  }
+  .SignupLoginText {
+    display: flex;
+  }
+  .TextSecondary {
+    color: yellow;
+  }
+  .FirstNameLastName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .FormCustomizer {
+    width: 100%;
+    /* display: flex; */
+    /* height: 100%; */
+    /* justify-content: center;
+      align-items: center; */
+  }
+  .InpuStyling {
+    height: 60px;
+    width: 60%;
+    border-radius: 10px;
+  }
+  .CreateProfileContainer {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .RightHalfButton {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  

@@ -34,12 +34,12 @@ export default function FotterPage() {
 				    		
 				    		</div>
 							<ul>
-								<li><a href="#">My Account</a></li>
-								<li><a href="#">Personal Information</a></li>
-								<li><a href="#">Address</a></li>
-								<li><a href="#">Discount</a></li>
-								<li><a href="#">Booking Hstory</a></li>
-								<li><a href="#">My Credit Slip</a></li>
+								<p><a href="#">My Account</a></p>
+								<p><a href="#">Personal Information</a></p>
+								<p><a href="#">Address</a></p>
+								<p><a href="#">Discount</a></p>
+								<p><a href="#">Booking Hstory</a></p>
+								<p><a href="#">My Credit Slip</a></p>
 							</ul>
 				    	</div>
 				    </div>
@@ -51,12 +51,12 @@ export default function FotterPage() {
 				    		
 				    		</div>
 							<ul>
-								<li><a href="#">Traveller</a></li>
-								<li><a href="#">Support Centre</a></li>
-								<li><a href="#">Special Offers</a></li>
-								<li><a href="#">Events Ready</a></li>
-								<li><a href="#">Flight</a></li>
-								<li><a href="#">Hotels</a></li>
+								<p><a href="#">Traveller</a></p>
+								<p><a href="#">Support Centre</a></p>
+								<p><a href="#">Special Offers</a></p>
+								<p><a href="#">Bus</a></p>
+								<p><a href="#">Flight</a></p>
+								<p><a href="#">Hotels</a></p>
 							</ul>
 				    	</div>
 				    </div>
@@ -69,9 +69,9 @@ export default function FotterPage() {
 				    		</div>
 							<p>Lorem ipsum dolor sit amet, cons adipiscing elit.</p>
 							<ul>
-								<li><a href="#">404 DESIGNER,  NEW YORK</a></li>
-								<li><a href="#">INFO@BLUEBIRD.COM</a></li>
-								<li><a href="#">+100 - 800 - 456789</a></li>
+								<p><a href="#">404 DESIGNER,  NEPAL</a></p>
+								<p><a href="#">INFO@NEPLVE.COM</a></p>
+								<p><a href="#">+100 - 800 - 456789</a></p>
 							</ul>
 				    	</div>
 				    </div>
@@ -83,7 +83,7 @@ export default function FotterPage() {
 			<div class="container">	
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<p>Copyright © <a href="#">Pathos Fashion 2015</a>. All Right Reserved</p>
+						<p>Copyright © <a href="#">NepLove 2021</a>. All Right Reserved</p>
 					</div>
 					<div class="col-md-6">
 						<img src="images/copyrights.png" alt="" class="img-responsive"/>

@@ -1,0 +1,143 @@
+@media (max-width: 438px) {
+    .overlay-div {
+      height: 120% !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+     .headLeft-content .buttonDiv {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+     }
+     .headLeft-content .buttonDiv>div {
+       margin: 12px;
+     }
+     .download-app-button-div {
+      flex-wrap: wrap;
+      justify-content: center !important;
+     }
+     .download-app-button-div>button {
+       margin: 12px !important;
+     }
+     .JobCardTitle {
+      flex-direction: column;
+      text-align: center;
+     }
+     span.CardFeatured {
+       display: block !important;
+     }
+     .jobs-list-right-locationInfo {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+     }
+     .jobs-card-subdetails {
+       margin: 5px !important;
+     }
+     .jobs-card-subdetails p {
+      margin: 0px !important;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .landHeader-innerdiv {
+      background-size: cover !important;
+    }
+    .overlay-div {
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 10%);
+      background-color: rgba(10,10,10,0.6);
+      z-index: 7;
+    }
+    .headLeft {
+      z-index: 22;
+    }
+    .download-app-container.container {
+      flex-direction: column-reverse;
+    }
+    .headLeft-content {
+      padding: 0px !important;
+    }
+  }
+  @media (max-width: 992px) {
+    .NavBlueDotsLi {
+      padding: 0;
+      width: auto !important;
+    }
+    ul.NavBlueDotsLi li {
+      padding: 0;
+      margin: auto;
+    }
+    hr.horizontalLine {
+      width: calc(100% - 20%);
+      left: 0;
+      right: 0;
+    }
+    .ServicesComponent {
+      padding: 20px !important;
+    }
+    .FeaturesNavButtonDiv {
+      width: 100%;
+    }
+    .NavButtonLi {
+      flex-wrap: wrap;
+      padding: 25px !important;
+    }
+    .NavButtonLi .listItems {
+      margin: 10px !important;
+    }
+    .NavImage {
+      width: 100% !important;
+      height: auto !important;
+    }
+    .find-jobs-startImage {
+      width: 100%;
+    }
+    .find-jobs-startImage-wrapper {
+      flex-wrap: wrap;
+    }
+    .find-jobs-in-container {
+      margin: 0px !important;
+      padding: 30px 0px 0px 0px !important;
+    }
+    .job-category-list ul {
+      margin: 0px !important;
+    }
+    .jobs-list-container {
+      margin: 30px 0px !important;
+    }
+    ul.jobs-list-ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul.jobs-list-ul>div {
+      width: 100%;
+    }
+    li.jobCardLi {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    div.jobs-list-ul-right {
+      margin: 0px !important;
+      width: 100% !important;
+    }
+    .download-app-right img {
+      width: 100% !important;
+    }
+    .download-app-left h2 {
+      margin: 0px !important;
+    }
+    .download-app-left-innerdiv {
+      text-align: center;
+    }
+    .companies-div-row.row {
+      margin: 30px 0px !important;
+    }
+    .companies-div-row.row>.col-md-3 {
+      padding-bottom: 20px;
+    }
+  }
+  

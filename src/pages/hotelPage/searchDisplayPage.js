@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Data from '../../utils/searchData'
 import {connect} from 'react-redux'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +9,11 @@ import {HotelCardSearch,HotelTypeComponent} from '../../component'
 import HeaderPage from '../headePage/headerPage'
 import './hotelStyling.css'
 const  SearchDisplayPage=(props)=> {
+   const [show, setShow] = useState(false)
+
+   const onDisplay=()=>{
+    setShow(!show)
+   }
 
     return (
         <div className="HotelSearchMainConatiner">
@@ -17,10 +22,10 @@ const  SearchDisplayPage=(props)=> {
                 return(
                     <div className="HotelCardMapContainer">
                         <div className="HotelInnerContainer">
-                    <HotelCardSearch key={index} image={item.hotel}/>
-                    {props.visible &&
+                    <HotelCardSearch key={index} image={item.hotel} onClick={onDisplay}/>   
+                    {show &&
                     <div className="HotelDetailsVisible">
-                    <HotelTypeComponent/>
+                    <HotelTypeComponent />
                     <div className="HotelsDetailsContainer">
                         <div className="DetailsTextCustomize">Details</div>
                         {Data.map((item,index)=>{

@@ -19,7 +19,7 @@ import {
   CardSubtitle,
   Button,
 } from "reactstrap";
-const HotelTypeComponent = ({ image }) => {
+const HotelTypeComponent = ({ image,onClick }) => {
   return (
     <Card className="HotelTypeCard">
       <div className="LeftImageContainer">

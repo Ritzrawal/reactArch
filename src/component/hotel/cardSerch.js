@@ -14,10 +14,10 @@ import {
   Button
 } from "reactstrap";
 import "./hotelComponent.css";
-const HotelCardSearch = ({ name, image,switchActive }) => {
+const HotelCardSearch = ({ name, image,switchActive,onClick }) => {
 
   const onShowDetails=()=>{
-    switchActive()
+    onClick()
     
   }
   return (

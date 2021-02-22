@@ -39,12 +39,12 @@ const HeaderPage = () => {
 
 				<NavItem>
 					<NavLink href='/login'>
-						<text className="HeaderText" >Login</text>
+						<text className="HeaderTextHeader" >Login</text>
 					</NavLink>
 				</NavItem>
 				<NavItem className='SignupButtonContainer'>
 					<NavLink href='/signup'>
-					<text  className="HeaderText">SignUp</text>
+					<text  className="HeaderTextHeader">SignUp</text>
 					</NavLink>
 				</NavItem>
 			</Nav>
