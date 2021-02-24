@@ -66,7 +66,7 @@ const LoginPage = (props) => {
 			response.profileObj.familyName,
 			response.profileObj.email,
 			response.profileObj.googleId,
-			response.profileObj.imageUrl
+			response.profileObj.imageUrl,
 		)
 	}
 	const responseFacebook = (response) => {

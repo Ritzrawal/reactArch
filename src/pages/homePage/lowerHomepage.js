@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import './homeStyles.css'
 import SearchHotelComponent from '../../component/searchHotelComponent'
 import SearchFlightComponent from '../../component/seachFight'
+import SearchBusComponent from '../../component/searchBusComponent'
 import FooterComponent from './fotterPage'
 import { ButtonGroup,Button } from 'reactstrap'
 import Data from '../../utils/constant'
 import CardComponent from '../../component/common/card'
-const  LowerHomepage=()=> {
+const  LowerHomepage=(props)=> {
   const [hotel, setHotel] = useState(true);
+  const [bus, setBus] = useState(true);
+
   const [flight, setFlight] = useState(false);
   const [count, setCount] = useState(true);
 
 const onClickHotel = () => {
-  setHotel(!hotel)
+props.history.push('/hotel')      
+}
+const onClickBus = () => {
+  console.log("Hello Props",props)
+  setHotel(!bus)
       
 }
 // const onClickFlight = () => {
@@ -41,13 +48,19 @@ const onClickHotel = () => {
             onClick={onClickHotel}
             >Flight</Button>
             <Button
-          className="ButtonClass">Bus</Button>
+          className="ButtonClass"
+          onClick={onClickBus}
+          >Bus</Button>
           </ButtonGroup>
         </div>
         <div className="SeachContainerComponent">
           {hotel ?(
           <SearchHotelComponent/>
-          ):(  <SearchFlightComponent/>)}
+          ):(  <SearchFlightComponent/>)
+          }
+         {bus ?(
+          <SearchBusComponent/>
+          ):null}
         
         </div>
         </div>

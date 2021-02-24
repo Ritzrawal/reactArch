@@ -34,28 +34,30 @@ const  SearchFlightComponent=(props) =>{
         </div>
         <Form  className="FormCustomize">
       <Row form>
-        <Col md={4}>
-          <FormGroup className="InputOuterStyle">
+        
+          <FormGroup className="InputOuterStyleFrom">
             <Input  className="InputCustomize" type="text" name="text" placeholder="From" />
           </FormGroup>
-        </Col>
-        <Col md={4}>
-        <FormGroup className="InputOuterStyle">
+       
+        
+        <FormGroup className="InputOuterStyleTo">
             <Input className="InputCustomize" type="text" name="text"  placeholder="To" />
           </FormGroup>
-        </Col>
-        <Col md={2}>
-        <FormGroup className="InputOuterStyle">
-            <Input className="InputCustomize" type="text" name="text" placeholder="Depart" />
-          </FormGroup>
-        </Col>
+        
+       
+       
           {props.visible?(
-   <Col md={2}>
-    <FormGroup className="InputOuterStyle">
-     <Input className="InputCustomize" type="text" name="text" placeholder="Return" />
+        <div className="FlightDepartReturn">
+
+      <FormGroup className="InputOuterStyleRounderWay">
+            <Input className="InputCustomize" type="date" name="date" placeholder="Depart" />
+          </FormGroup>
+    <FormGroup className="InputOuterStyleReturn">
+     <Input className="InputCustomize" type="date" name="return_date" placeholder="Return" />
    </FormGroup>
- </Col>
-        ):null}
+   </div>         ): <FormGroup className="InputOuterStyleOneWay">
+        <Input className="InputCustomize" type="date" name="date" placeholder="Depart" />
+      </FormGroup>}
        
       </Row>
       <div className="LowerFlightButton">
@@ -66,28 +68,25 @@ const  SearchFlightComponent=(props) =>{
         <Label for="exampleCheck" check>Direct flight only</Label>
       </FormGroup>
       <div className="Passenger">
-      <Dropdown   isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle caret>
-          Hotels
-        </DropdownToggle>
-        <DropdownMenu container="body">
-          <DropdownItem onClick={() => setLastClicked(1)}>Action 1</DropdownItem>
-          <DropdownItem onClick={() => setLastClicked(2)}>Action 2</DropdownItem>
-          <DropdownItem onClick={() => setLastClicked(3)}>Action 3</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
-      </div>
-      <div className="Passenger">
-      <Dropdown   isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle caret>
-          Hotels
-        </DropdownToggle>
-        <DropdownMenu container="body">
-          <DropdownItem onClick={() => setLastClicked(1)}>Action 1</DropdownItem>
-          <DropdownItem onClick={() => setLastClicked(2)}>Action 2</DropdownItem>
-          <DropdownItem onClick={() => setLastClicked(3)}>Action 3</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
+       <FormGroup className="PassengerType">
+        <Input type="select" name="select" className="PassengerTypeInput" id="exampleSelect">
+          <option>1 Passenger</option>
+          <option>2 Passenger</option>
+          <option>3 Passenger</option>
+          <option>4 Passenger</option>
+          <option>5 Passenger</option>
+        </Input>
+      </FormGroup>
+      <FormGroup className="ClassType">
+        <Input type="select" className="ClassTypeInput" name="select" id="exampleSelect">
+          <option>Economy</option>
+          <option>Premium Economy</option>
+          <option>First Class</option>
+          <option>Business Class</option>
+          
+          
+        </Input>
+      </FormGroup>
       </div>
       <div className="PassengerButton">
        <Button className="ButtonSearch">Search</Button>

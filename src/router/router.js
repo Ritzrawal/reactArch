@@ -13,6 +13,7 @@ import HotelTypeComponent from '../component/hotel/hotelTypeCard'
 import SearchDisplayPage from '../pages/hotelPage/searchDisplayPage'
 import AirlineSeaarchPage from '../pages/airlinesPage/airSearchPage'
 import Homepage from '../pages/homePage/homePage'
+import BusHomePage from '../pages/busPage/busHomePage'
 import BusSeaarchPage from '../pages/busPage/busSearchPage'
  const RouterConfiguration=() =>{
   return (
@@ -21,7 +22,7 @@ import BusSeaarchPage from '../pages/busPage/busSearchPage'
           <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/signup" component={SignupPage} />
-          <Route exact path="/hotel" component={HotelTypeComponent} />
+          <Route exact path="/hotel" component={BusHomePage} />
           <Route exact path="/hotel/search" component={SearchDisplayPage} />
           <Route exact path="/flight" component={AirlineSeaarchPage} />
           <Route exact path="/flight/details" component={DetailAirplane} />

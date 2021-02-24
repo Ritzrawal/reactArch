@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Card,Form,Row,Col,FormGroup,Input,Label } from 'reactstrap';
+import { Card,Form,Row,Col,FormGroup,Input,Label,Button } from 'reactstrap';
 import './componentstyle.css'
 const  SearchHotelComponent=() =>{
     return (
@@ -11,31 +11,34 @@ const  SearchHotelComponent=() =>{
         </div>
         <Form  className="FormCustomize">
       <Row form>
-        <Col md={6}>
-          <FormGroup className="InputOuterStyle">
+       
+          <FormGroup className="InputOuterStyleDest">
             <Input  className="InputCustomize" type="text" name="text" placeholder="Destination" />
           </FormGroup>
-        </Col>
-        <Col md={2}>
-        <FormGroup className="InputOuterStyle">
-            <Input className="InputCustomize" type="text" name="text"  placeholder="Check In" />
+       
+       
+        <FormGroup className="InputOuterStyleCheckIn">
+            <Input className="InputCustomize" type="date" name="checkin_date"  placeholder="Check In" />
           </FormGroup>
-        </Col>
-        <Col md={2}>
-        <FormGroup className="InputOuterStyle">
-            <Input className="InputCustomize" type="text" name="text" placeholder="Check Out" />
+      
+        
+        <FormGroup className="InputOuterStyleCheckOut">
+            <Input className="InputCustomize" type="date" name="date" placeholder="Check Out" />
           </FormGroup>
-        </Col>
-        <Col md={2}>
-        <FormGroup className="InputOuterStyle">
+       
+        <FormGroup className="InputOuterStyleGuest">
             <Input className="InputCustomize" type="text" name="text" placeholder="Guests & Rooms" />
           </FormGroup>
-        </Col>
       </Row>
+      <div className="LowerFlightButton">
       <FormGroup check className="CheckBoxContainer">
         <Input type="checkbox" name="check" id="exampleCheck"/>
         <Label for="exampleCheck" check>Free Cancellation</Label>
       </FormGroup>
+      <div className="PassengerButtonHotel">
+       <Button className="ButtonSearch">Search</Button>
+      </div>
+      </div>
       </Form>
             </Card>
        
