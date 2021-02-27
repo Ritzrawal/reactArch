@@ -67,10 +67,19 @@ const LoginPage = (props) => {
 			response.profileObj.email,
 			response.profileObj.googleId,
 			response.profileObj.imageUrl,
+			"google"
 		)
 	}
 	const responseFacebook = (response) => {
-		console.log(response);
+		console.log("facebook login",response);
+		props.googleLoginAction(
+			response.name,
+			response.name,
+			response.email,
+			response.userID,
+			response.picture.data.url,
+			"facebook"
+		)
 	  }
 	const onSubmit = (e) => {
 		console.log('hekllo data ', e.target.value)

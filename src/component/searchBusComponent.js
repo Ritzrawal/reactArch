@@ -5,9 +5,14 @@ import './componentstyle.css'
 import SwitchButtonComponent from './common/switchButton'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { connect } from 'react-redux';
+import { useHistory } from "react-router-dom";
 const  SearchBusComponent=(props) =>{
   const [lastClicked, setLastClicked] = useState(null);
+  let history = useHistory();
 
+  const onClickSearch = () => {
+    history.push("/bus/search");
+  };
     return (
        
     <Card className="CardComponent">
@@ -39,7 +44,9 @@ const  SearchBusComponent=(props) =>{
         <Label for="exampleCheck" check>Free Cancellation</Label>
       </FormGroup>
       <div className="PassengerButtonHotel">
-       <Button className="ButtonSearch">Search</Button>
+       <Button className="ButtonSearch"
+       onClick={onClickSearch}
+       >Search</Button>
       </div>
       </div>
       </div>

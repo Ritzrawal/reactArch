@@ -2,7 +2,13 @@
 import React from 'react'
 import { Card,Form,Row,Col,FormGroup,Input,Label,Button } from 'reactstrap';
 import './componentstyle.css'
+import {useHistory} from 'react-router-dom'
 const  SearchHotelComponent=() =>{
+  let history = useHistory();
+
+  const onClickSearch = () => {
+    history.push("/hotel/search");
+  };
     return (
        
     <Card className="CardComponent">
@@ -36,7 +42,9 @@ const  SearchHotelComponent=() =>{
         <Label for="exampleCheck" check>Free Cancellation</Label>
       </FormGroup>
       <div className="PassengerButtonHotel">
-       <Button className="ButtonSearch">Search</Button>
+       <Button className="ButtonSearch"
+       onClick={onClickSearch}
+       >Search</Button>
       </div>
       </div>
       </Form>

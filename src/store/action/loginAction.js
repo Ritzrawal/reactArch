@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {LOGIN,LOGIN_ERROR,GOOGLE_LOGIN,GOOGLE_ERROR,SIGN_UP,SINGNUP_ERROR,
+import {LOGIN,LOGIN_ERROR,GOOGLE_LOGIN,FACE_LOGIN,SIGN_UP,SINGNUP_ERROR,
     FORGET_PASSWORD,PASSWORD_ERROR,NEW_PASSWORD,SWITCH_ACTIVE,SWITCH_INACTIVE} from '../constant';
 const baseUrl = 'http://3.134.77.36/api/v1'
 
@@ -31,15 +31,16 @@ export const googleLoginAction = (first_name,
     last_name,email,profile_id,profile_image,provider
 	
 ) => (dispatch) => {
-	console.log('google login form', first_name)
+	console.log('google login form', provider)
+	
 	axios
 		.post(`${baseUrl}/oauth-login`, {
 			first_name: first_name,
 			last_name: last_name,
-			email: email,
+			email:email,
 			profile_id: profile_id,
-			profile_image: profile_image,
-			provider: "google",
+			picture: profile_image,
+			auth_provider: provider,
 		})
 		.then((res) => {
 			console.log('google login', res)
@@ -50,11 +51,11 @@ export const googleLoginAction = (first_name,
 		})
 
 		.catch((error) =>
-			dispatch({
-				type: GOOGLE_ERROR,
-				payload: [],
-			})
-		)
+		dispatch({
+			type: GOOGLE_LOGIN,
+			payload: error.response,
+		})
+	)
 }
 export const signupAction = (first_name,last_name,email,password,confirm_password
 	

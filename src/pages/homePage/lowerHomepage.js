@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useHistory} from 'react-router-dom'
 import './homeStyles.css'
 import SearchHotelComponent from '../../component/searchHotelComponent'
 import SearchFlightComponent from '../../component/seachFight'
@@ -8,6 +9,8 @@ import { ButtonGroup,Button } from 'reactstrap'
 import Data from '../../utils/constant'
 import CardComponent from '../../component/common/card'
 const  LowerHomepage=(props)=> {
+  let history = useHistory();
+
   const [hotel, setHotel] = useState(true);
   const [bus, setBus] = useState(true);
 
@@ -15,58 +18,22 @@ const  LowerHomepage=(props)=> {
   const [count, setCount] = useState(true);
 
 const onClickHotel = () => {
-props.history.push('/hotel')      
+history.push('/hotel')      
 }
 const onClickBus = () => {
-  console.log("Hello Props",props)
-  setHotel(!bus)
+  history.push('/bus') 
+ 
       
 }
-// const onClickFlight = () => {
-//   setFlight(true)
-      
-// }
+const onClickFlight = () => {
+  history.push('/flight')       
+}
   return (
     <div className="HomeMainContainer">
-      <div className="BackgrundImageContainer">
-        <div className="BackGroundImage">
-
-        </div>
-      </div>
       <div className="SearchMainContainer">
-        <div className="SearchInnerComponent">
-        <div className="TopButtonContainer">
-          <ButtonGroup className="ButtonGroupComponent">
-            <Button
-            className="ButtonClass"
-            name="hotel"
-            onClick={onClickHotel}
-            >Hotel</Button>
-            <Button
-             className="ButtonClass"
-             name="Flight"
-            onClick={onClickHotel}
-            >Flight</Button>
-            <Button
-          className="ButtonClass"
-          onClick={onClickBus}
-          >Bus</Button>
-          </ButtonGroup>
-        </div>
-        <div className="SeachContainerComponent">
-          {hotel ?(
-          <SearchHotelComponent/>
-          ):(  <SearchFlightComponent/>)
-          }
-         {bus ?(
-          <SearchBusComponent/>
-          ):null}
-        
-        </div>
-        </div>
         <div className="CardOuterComponent">
           <div className="RecomandedHotel">
-            <text className= "RecomHotelStyling">Recomanded Hotels</text>
+            <text className= "RecomHotelStyling">{props.title}</text>
           </div>
        
          <ButtonGroup className="ButtonGroupComponentCat">
@@ -112,7 +79,7 @@ const onClickBus = () => {
       <div className="BusComponentDisplay">
       <div className="CardOuterComponent">
           <div className="RecomandedHotel">
-            <text className= "RecomHotelStyling">Recomanded Bus</text>
+            <text className= "RecomHotelStyling">{props.lowertitle}</text>
           </div>
        
          <ButtonGroup className="ButtonGroupComponentCat">

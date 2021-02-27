@@ -3,10 +3,9 @@ import HeaderPage from "../headePage/headerPage";
 import "../homePage/homeStyles.css";
 import { ButtonGroup, Button } from "reactstrap";
 import { useHistory } from "react-router-dom";
-import SearchBusComponent from "../../component/searchBusComponent";
-
+import SearchHotelComponent from '../../component/searchHotelComponent'
 import LowerHomepage from "../homePage/lowerHomepage";
-const BusHomePage = () => {
+const HotelHomePage = () => {
   let history = useHistory();
 
   const onClickHotel = () => {
@@ -17,9 +16,6 @@ const BusHomePage = () => {
   };
   const onClickFlight = () => {
     history.push("/flight");
-  };
-  const onSearchBus = () => {
-    history.push("/bus/search");
   };
   return (
     <div>
@@ -52,15 +48,15 @@ const BusHomePage = () => {
             </ButtonGroup>
           </div>
           <div className="SeachContainerComponent">
-            <SearchBusComponent />
+            <SearchHotelComponent />
           </div>
         </div>
         </div>
         <div className="LowerHomepage">
-        <LowerHomepage  title='Recomanded Bus' lowertitle="Most Popular Bus"/>
+        <LowerHomepage title='Recomanded Hotels'lowertitle="Most Popular Hotels"/>
         </div>
       </div>
     </div>
   );
 };
-export default BusHomePage;
+export default HotelHomePage;

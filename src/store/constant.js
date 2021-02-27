@@ -9,6 +9,7 @@ export const SINGNUP_ERROR='SINGNUP_ERROR'
 export const GOOGLE_LOGIN='GOOGLE_LOGIN'
 export const GOOGLE_ERROR='GOOGLE_ERROR'
 export const NEW_PASSWORD='NEW_PASSWORD'
+export const FACE_LOGIN='FACE_LOGIN'
 
 
 

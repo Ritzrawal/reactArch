@@ -96,18 +96,26 @@ const SignupPage = (props) => {
 	}
 
 	const responseGoogle = (response) => {
-		console.log('hello Signup', response)
-		const profileObj = response.profileObj
+		console.log('hello login', response)
 		props.googleLoginAction(
-			profileObj.givenName,
-			profileObj.familyName,
-			profileObj.email,
-			profileObj.googleId,
-			profileObj.imageUrl
+			response.profileObj.givenName,
+			response.profileObj.familyName,
+			response.profileObj.email,
+			response.profileObj.googleId,
+			response.profileObj.imageUrl,
+			"google"
 		)
 	}
-    const responseFacebook = (response) => {
-		console.log(response);
+	const responseFacebook = (response) => {
+		console.log("facebook login",response);
+		props.googleLoginAction(
+			response.name,
+			response.name,
+			response.email,
+			response.userID,
+			response.picture.data.url,
+			"facebook"
+		)
 	  }
 	const onSubmit = (e) => {
 		console.log('hekllo data ', e.target.value)
@@ -143,7 +151,9 @@ const SignupPage = (props) => {
 								className='LoginGoogleLoginButton'
 								style={{ fontSize: 30, width: 70 }}
 								// icon={false}
-								clientId='737555203672-4n453vuqglt2lv26ce5fn2mgkpta51at.apps.googleusercontent.com'
+								
+
+								clientId='737555203672-njimhihhe93suh76chvsp3jkdrub95ck.apps.googleusercontent.com'
 								// buttonText='Sign up with Google'
 								onSuccess={responseGoogle}
 								onFailure={responseGoogle}
