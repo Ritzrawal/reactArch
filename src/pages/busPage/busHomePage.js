@@ -15,7 +15,10 @@ const BusHomePage = () => {
   const onClickBus = () => {
     history.push("/bus");
   };
-  const onClickFlight = () => {
+  const onClickFlight = (e) => {
+    console.log("this is working fine");
+    e.preventDefault();
+    e.target.style.color = 'black'
     history.push("/flight");
   };
   const onSearchBus = () => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 //import ui library comaponent
 import {
 	Navbar,
@@ -7,16 +7,20 @@ import {
 	Nav,
 	NavItem,
 	NavLink,
+	Collapse,
 	NavbarText,
 } from 'reactstrap'
 import './headerPage.css'
 const HeaderPage = () => {
+	const [isOpen, setIsOpen] = useState(false)
+	const toggle = () => setIsOpen(!isOpen)
 	return (
 		<Navbar className='NavbarIcon' light expand='md'>
 			<NavbarBrand className='HomevbarComponent' href='/'>
 				<text className='HomebarTextComponent'>NepLove</text>
 			</NavbarBrand>
-			<NavbarToggler />
+			<NavbarToggler onClick={toggle} />
+			<Collapse isOpen={isOpen} navbar>
 
 			<Nav className='HeaderComponent' navbar>
 				<div className='HeaderItemComponent'>
@@ -37,7 +41,7 @@ const HeaderPage = () => {
 					</NavItem>
 				</div>
 
-				<NavItem>
+				<NavItem className='SignupButtonContainer'>
 					<NavLink href='/login'>
 						<text className="HeaderTextHeader" >Login</text>
 					</NavLink>
@@ -48,6 +52,7 @@ const HeaderPage = () => {
 					</NavLink>
 				</NavItem>
 			</Nav>
+			</Collapse>
 		</Navbar>
 	)
 }

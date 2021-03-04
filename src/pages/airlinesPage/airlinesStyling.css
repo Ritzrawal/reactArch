@@ -165,3 +165,173 @@
 .LowerIcon{
     color: #2ec2e2;
 }
+
+/* Adding the media querrry for the responsive design */
+@media screen and (min-width: 480px) {
+    .FlightCardMapContainer{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+       
+    }
+    .FlightInnerContainer{
+        width: 100%;
+    }
+    .CheapestFilterContainer{
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+        height: 70px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 30px; 
+    }
+    .FlightInnerLogoAndCustomize{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /* align-items: center; */
+        border-right: 1px solid  rgba(0, 0, 0, 0.07);
+    }
+    .LogoOFilter{
+        padding-right: 30px;
+    }
+    .FilterLogoCustomize{
+       color: #2ec2e2
+    }
+    .FlightInnerLogoAndCustomize:hover::before{
+        width: 17%;
+      }
+     .FlightInnerLogoAndCustomize::before{
+        content:"";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: red;
+      }
+    /* Details airplane Customizer */
+    
+    
+    
+    .AirplaneCardContainer{
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+    }
+    .AirlinesMainContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .DescriptionContainer{
+       justify-content: center;
+       align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .AirDate{
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+    
+    }
+    .AirDateFirst{
+        margin-right: 50px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+    
+    }
+    .TimeCustomize{
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .TimingDisplayHourly{
+        display: flex;
+        margin-left: 100px;
+    }
+    .TimeDisplay{
+        margin-left:100px;
+      
+    }
+    .DetailAireplane{
+    
+    
+    }
+    .TransitDispaly{
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .AirDescription{
+        width: 100px;
+        height: 100px;
+    }
+    .LogoCustomize{
+        width: 100%;
+        height: 100%;
+    }
+    .TransitContainer{
+        height: 100px;
+        padding-right: 165px;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+    }
+    .SearchandFilter{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .SearchCardCustomize{
+        width: 70%;
+    }
+    .SideFliterSearch{
+        width: 200px;
+        margin-top: 50px;
+    }
+    
+    .TimingDisplayHourly{
+    
+    }
+    /* customize the Filter page of Airlince page */
+    .FilterCheckBoxContainer{
+        border-bottom: 1px solid;
+        border-color:#234476 ;
+       
+       
+    }
+    .CategoryTitleandLogo{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+    }
+    .CategoryTitle{
+        font-family: "Montserrat";
+        display: flex;
+        flex: auto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #234476; 
+    }
+    .LowerIcon{
+        color: #2ec2e2;
+    }
+  }
