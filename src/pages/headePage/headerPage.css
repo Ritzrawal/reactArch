@@ -25,6 +25,7 @@
 }
 .NavTextCustomize{
     margin-left: 2%;
+    flex-wrap: wrap;
 font-family: "Montserrat";
 font-style: normal;
 font-weight: bold;
@@ -33,6 +34,17 @@ line-height: 20px;
 color: #FFFFFF;
 
 }
+ .NavTextCustomize:hover::after{
+    width: 80px;
+  }
+ .NavTextCustomize::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
 .HeaderTextCustomize{
 font-family: "Montserrat";
 font-style: normal;

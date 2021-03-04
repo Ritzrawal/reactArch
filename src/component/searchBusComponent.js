@@ -5,6 +5,7 @@ import './componentstyle.css'
 import SwitchButtonComponent from './common/switchButton'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { connect } from 'react-redux';
+import InputCheckBox from './common/checkbox'
 import { useHistory } from "react-router-dom";
 const  SearchBusComponent=(props) =>{
   const [lastClicked, setLastClicked] = useState(null);
@@ -39,10 +40,11 @@ const  SearchBusComponent=(props) =>{
 
      
       <div className="LowerFlightButton">
-      <FormGroup check className="CheckBoxContainer">
+      <InputCheckBox  title="Free Cancellation"/>
+      {/* <FormGroup check className="CheckBoxContainer">
         <Input type="checkbox" name="check" id="exampleCheck"/>
         <Label for="exampleCheck" check>Free Cancellation</Label>
-      </FormGroup>
+      </FormGroup> */}
       <div className="PassengerButtonHotel">
        <Button className="ButtonSearch"
        onClick={onClickSearch}

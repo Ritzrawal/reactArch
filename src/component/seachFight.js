@@ -10,6 +10,7 @@ import {
   ButtonGroup,
 } from "reactstrap";
 import "./componentstyle.css";
+import InputCheckBox from './common/checkbox'
 import SwitchButtonComponent from "./common/switchButton";
 import {
   Dropdown,
@@ -94,12 +95,13 @@ const SearchFlightComponent = (props) => {
           )}
         </Row>
         <div className="LowerFlightButton">
-          <FormGroup check className="CheckBoxContainer">
+          <InputCheckBox  title="Direct flight only"/>
+          {/* <FormGroup check className="CheckBoxContainer">
             <Input type="checkbox" name="check" id="exampleCheck" />
             <Label for="exampleCheck" check>
               Direct flight only
             </Label>
-          </FormGroup>
+          </FormGroup> */}
           <div className="Passenger">
             <FormGroup className="PassengerType">
               <Input

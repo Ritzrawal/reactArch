@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
   faAngleDown,
-  faLongArrowAltRight
+  faLongArrowAltRight,
+  faAngleUp
 } from "@fortawesome/free-solid-svg-icons";
 import './airplane.css'
-const  AirSearchCompnent=({image,details,title,onDisplay})=> {
+const  AirSearchCompnent=({image,details,title,onDisplay,show})=> {
 
     const onDisplayCard=()=>{
+        console.log('show',show)    
         onDisplay()
     }
     return (
@@ -52,10 +54,10 @@ const  AirSearchCompnent=({image,details,title,onDisplay})=> {
                 </div>
 
             </div>
-            <div className="LowerFlightDetail">
+            <div className="LowerFlightDetail" onClick={onDisplayCard}>
                 <div className="FlightDetils">{details}</div>
                
-                <FontAwesomeIcon className="IconCustomizeMore" size="2x" icon={faAngleDown} onClick={onDisplayCard}/>
+                <FontAwesomeIcon className="IconCustomizeMore" size="2x" icon={show ?faAngleUp:faAngleDown} />
               
 
             </div>

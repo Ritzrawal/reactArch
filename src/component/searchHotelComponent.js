@@ -3,6 +3,7 @@ import React from 'react'
 import { Card,Form,Row,Col,FormGroup,Input,Label,Button } from 'reactstrap';
 import './componentstyle.css'
 import {useHistory} from 'react-router-dom'
+import InputCheckBox from './common/checkbox'
 const  SearchHotelComponent=() =>{
   let history = useHistory();
 
@@ -37,10 +38,7 @@ const  SearchHotelComponent=() =>{
           </FormGroup>
       </Row>
       <div className="LowerFlightButton">
-      <FormGroup check className="CheckBoxContainer">
-        <Input type="checkbox" name="check" id="exampleCheck"/>
-        <Label for="exampleCheck" check>Free Cancellation</Label>
-      </FormGroup>
+      <InputCheckBox  title="Free Cancellation"/>
       <div className="PassengerButtonHotel">
        <Button className="ButtonSearch"
        onClick={onClickSearch}
