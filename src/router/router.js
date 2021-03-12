@@ -5,18 +5,20 @@ import {
   Route,
 } from "react-router-dom";
 import DetailAirplane from '../pages/airlinesPage/detailsAirplane'
-import AccountAddress from '../pages/accountPage/billingAddress'
-import ForgetPassword from '../pages/loginPage/forgetPassword'
-import LoginPage from '../pages/loginPage/loginPage'
-import HotelHomePage from '../pages/hotelPage/hotelHomePage'
-import SignupPage from '../pages/signupPage/signupPgae'
-import FlightHomePage from '../pages/airlinesPage/flightHomePage'
-import HotelTypeComponent from '../component/hotel/hotelTypeCard'
-import SearchDisplayPage from '../pages/hotelPage/searchDisplayPage'
 import AirlineSeaarchPage from '../pages/airlinesPage/airSearchPage'
 import Homepage from '../pages/homePage/homePage'
-import BusHomePage from '../pages/busPage/busHomePage'
 import BusSeaarchPage from '../pages/busPage/busSearchPage'
+import {AccountAddress,
+  TravelTourPage,
+  FlightHomePage,
+  BusHomePage,
+  SignupPage,
+  HotelHomePage,
+  SearchDisplayPage,
+  LoginPage,
+  Payment,
+  TravelSearchPage,
+  ForgetPassword} from '../pages'
  const RouterConfiguration=() =>{
   return (
     <Router>
@@ -27,11 +29,14 @@ import BusSeaarchPage from '../pages/busPage/busSearchPage'
           <Route exact path="/hotel" component={HotelHomePage} />
           <Route exact path="/hotel/search" component={SearchDisplayPage} />
           <Route exact path="/flight" component={FlightHomePage} />
+          <Route exact path="/travel" component={TravelTourPage} />
+          <Route exact path="/travel/search" component={TravelSearchPage} />
           <Route exact path="/flight/search" component={AirlineSeaarchPage} />
           <Route exact path="/flight/details" component={DetailAirplane} />
           <Route exact path="/bus" component={BusHomePage} />
           <Route exact path="/bus/search" component={BusSeaarchPage} />
           <Route exact path="/booking" component={AccountAddress} />
+          <Route exact path="/payment" component={Payment} />
           <Route exact path ="/change-password" component={ForgetPassword}/>
          
         </Switch>

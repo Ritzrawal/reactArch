@@ -17,6 +17,9 @@ const HomePage = () => {
   const onClickFlight = () => {
     history.push("/flight");
   };
+  const onClickTravel=()=>{
+    history.push("/travel");
+  }
   return (
     <div>
       <HeaderPage />
@@ -44,6 +47,9 @@ const HomePage = () => {
               </Button>
               <Button className="ButtonClass" onClick={onClickBus}>
                 Bus
+              </Button>
+              <Button className="ButtonClass" onClick={onClickTravel}>
+                Tours & Travels
               </Button>
             </ButtonGroup>
           </div>

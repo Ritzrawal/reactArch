@@ -31,7 +31,7 @@ export const googleLoginAction = (first_name,
     last_name,email,profile_id,profile_image,provider
 	
 ) => (dispatch) => {
-	console.log('google login form', provider)
+	console.log('google login form', profile_image)
 	
 	axios
 		.post(`${baseUrl}/oauth-login`, {
@@ -39,8 +39,8 @@ export const googleLoginAction = (first_name,
 			last_name: last_name,
 			email:email,
 			profile_id: profile_id,
-			picture: profile_image,
-			auth_provider: provider,
+			profile_image: profile_image,
+			provider: provider,
 		})
 		.then((res) => {
 			console.log('google login', res)

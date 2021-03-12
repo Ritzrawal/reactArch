@@ -1,0 +1,142 @@
+.HeaderTravelViewFacility{
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: 0.06em;
+/* text-transform: uppercase; */
+
+color: #808FA6;
+}
+.TravelInnerCardContainer{
+    padding-left: 2%;
+}
+.TravelContainDetails{
+         margin-left: 2%; 
+    margin-top: 2%;
+}
+.TravelHeaderTextContainer{
+    display: flex;
+    flex-direction: row;
+     /* width: 70%;  */
+
+}
+
+.DestinationTo{
+    padding-top: 5px;
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 150%;
+/* identical to box height, or 42px */
+
+letter-spacing: -0.03em;
+
+color: #162A49;
+}
+.DestinationToDate{
+flex-direction: row;
+padding-top:5px ;
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 16px;
+color: #808FA6;
+letter-spacing: 0.06em;
+/* text-transform: uppercase; */
+
+}
+.PriceTravelDisplay{
+
+}
+.AllInclusiveFaclity{
+    padding-left: 20px;
+}
+.PricetagContainer{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+.PriceTageInnerContainer{
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+}
+.PreviousPrice{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    color: #808FA6;
+    letter-spacing: 0.06em; 
+}
+.SavePrice{
+    font-family: "Montserrat";
+    font-style: normal;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    color: red;
+    letter-spacing: 0.06em;
+}
+.TotalPriceDisplay{
+    font-family: "Montserrat";
+    padding-top: 30px;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 29px;
+letter-spacing: -0.03em;
+}
+.TotalPricePersion{
+    padding-top: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    color: #808FA6;
+    letter-spacing: 0.06em;   
+}
+.TravelShowMoreContainer{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+/*
+//box shadow 
+
+background: #FFFFFF;
+box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+border-radius: 5px;
+
+//rating
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 21px;
+color: #F09D20;
+
+//second title
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.03em;
+
+color: #162A49;
+*/

@@ -67,7 +67,6 @@ export default function FotterPage() {
 				    			<h4>CONTACT US</h4>
 				    		
 				    		</div>
-							<p>Lorem ipsum dolor sit amet, cons adipiscing elit.</p>
 							<ul>
 								<p><a href="#">404 DESIGNER,  NEPAL</a></p>
 								<p><a href="#">INFO@NEPLVE.COM</a></p>
@@ -83,7 +82,7 @@ export default function FotterPage() {
 			<div class="container">	
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<p>Copyright © <a href="#">NepLove 2021</a>. All Right Reserved</p>
+						<p className="RightsNepCustomize">Copyright © <a href="#">NepLove 2021</a>. All Right Reserved</p>
 					</div>
 					<div class="col-md-6">
 						<img src="images/copyrights.png" alt="" class="img-responsive"/>

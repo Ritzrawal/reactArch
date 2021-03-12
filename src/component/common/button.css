@@ -123,10 +123,29 @@ line-height: 20px;
     margin-left: 15px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.CardImageStyling{
+/* .CardImageStyling{
 width:100%;
 height: 150px;
 }
+.CardImageStyling:hover{
+  transform: scale(1.1);
+} */
+ .CardImageStyling {
+  display: inline-block;
+  height: 150px;
+  /* margin: 20px; */
+}
+.CardImageStyling img {
+  cursor: pointer;
+  display: block;
+  transition: transform .4s;  
+}
+.CardImageStyling:hover img {
+  cursor: pointer!important;
+  cursor: pointer;
+  transform: scale(1.3);
+  transform-origin: 50% 50%;
+} 
 /* Customiz the Checkbox */
 .GlobalCustomCheckBox .GlobalCheckBoxCustomize {
   display: flex;

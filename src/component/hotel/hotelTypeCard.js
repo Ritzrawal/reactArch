@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
@@ -10,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./hotelComponent.css";
 import PropType from "prop-types";
+
 import {
   Card,
   CardImg,
@@ -20,6 +22,10 @@ import {
   Button,
 } from "reactstrap";
 const HotelTypeComponent = ({ image,onClick }) => {
+  let history=useHistory();
+const onBooking=()=>{
+  history.push("/booking")
+}
   return (
     <Card className="HotelTypeCard">
       <div className="LeftImageContainer">
@@ -60,7 +66,7 @@ const HotelTypeComponent = ({ image,onClick }) => {
           <div className="PriceConatiner">
             <div className="PriceDetails">$98</div>
             <div>
-              <Button className="ButtonCustomize">Reserve
+              <Button className="ButtonCustomize" onClick={onBooking}>Reserve
               <FontAwesomeIcon className="IconCustomize" icon={faAngleRight} />
 
               </Button>

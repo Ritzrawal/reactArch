@@ -10,7 +10,8 @@ import {
   ButtonGroup,
 } from "reactstrap";
 import "./componentstyle.css";
-import InputCheckBox from './common/checkbox'
+import InputCheckBox from './common/checkbox' 
+import Calender from './hotel/calender'
 import SwitchButtonComponent from "./common/switchButton";
 import {
   Dropdown,
@@ -66,7 +67,10 @@ const SearchFlightComponent = (props) => {
 
           {props.visible ? (
             <div className="FlightDepartReturn">
-              <FormGroup className="InputOuterStyleRounderWay">
+               <div className="CalenderCustomize">
+          <Calender />
+          </div>
+              {/* <FormGroup className="InputOuterStyleRounderWay">
                 <Input
                   className="InputCustomize"
                   type="date"
@@ -81,7 +85,7 @@ const SearchFlightComponent = (props) => {
                   name="return_date"
                   placeholder="Return"
                 />
-              </FormGroup>
+              </FormGroup> */}
             </div>
           ) : (
             <FormGroup className="InputOuterStyleOneWay">

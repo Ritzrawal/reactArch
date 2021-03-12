@@ -25,7 +25,7 @@ const HeaderPage = () => {
 			<Nav className='HeaderComponent' navbar>
 				<div className='HeaderItemComponent'>
 					<NavItem className='NavTextCustomize'>
-						<NavLink href='/hotel/search'>
+						<NavLink href='/hotel'>
 							<text className='HeaderTextCustomize'>Hotels</text>
 						</NavLink>
 					</NavItem>
@@ -37,6 +37,11 @@ const HeaderPage = () => {
 					<NavItem className='NavTextCustomize'>
 						<NavLink href='/bus'>
 							<text className='HeaderTextCustomize'> Bus</text>
+						</NavLink>
+					</NavItem>
+					<NavItem className='NavTextCustomize'>
+						<NavLink href='/bus'>
+							<text className='HeaderTextCustomize'>Tours & Travels</text>
 						</NavLink>
 					</NavItem>
 				</div>

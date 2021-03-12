@@ -19,7 +19,8 @@
       margin-top: 100px;
       flex-direction: row;
   }
-  .MainContainer{
+  .OuterMainContainer{
+    width: 50%;
       box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
       display: flex;
       justify-content: center;
@@ -337,5 +338,26 @@ color: #ffffff;
   }
   span{
       width: 100%;
+  }
+  /* Responsive design for the LoginPage */
+
+  @media screen and (max-width: 768px) {
+.OuterMainContainer{
+  width: 100%;
+  box-shadow: none;
+  height: 100%!important;
+}
+.LoginMainContainer{
+  margin-top: 0px;
+}
+.LoginInnerMainContainer{
+width: 90%;
+}
+.InnerMainContainer{
+  width: 90%!important;
+}
+.col-md-15.col-sm-3{
+  width: fit-content;
+}
   }
   

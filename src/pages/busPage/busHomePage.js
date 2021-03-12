@@ -24,6 +24,10 @@ const BusHomePage = () => {
   const onSearchBus = () => {
     history.push("/bus/search");
   };
+  const onClickTravel=()=>{
+    history.push("/travel");
+
+  }
   return (
     <div>
       <HeaderPage />
@@ -51,6 +55,9 @@ const BusHomePage = () => {
               </Button>
               <Button className="ButtonClass" onClick={onClickBus}>
                 Bus
+              </Button>
+              <Button className="ButtonClass" onClick={onClickTravel}>
+              Tours & Travels
               </Button>
             </ButtonGroup>
           </div>

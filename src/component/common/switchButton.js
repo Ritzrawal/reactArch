@@ -14,19 +14,10 @@ const buttontitle = [
 	},
 ]
 const SwitchButtonComponent = (props) => {
-	const [selected, setSelected] = useState(false)
-	const [selectedtwo, setSelectedtwo] = useState(false)
 	const [activeButton, setActiveButton] = useState(buttontitle[0].name)
 
-	const toggleSelected = () => {
-		setSelected(!selected)
-	}
-	const toggleSelectedtwo = () => {
-		setSelectedtwo(!selectedtwo)
-	}
-	const onSideBtnClick = (e) => {
-        console.log("hello" ,props)
-		
+	
+	const onSideBtnClick = (e) => {		
 		const name = e.target.name
 		setActiveButton(name)
 		if(name==='One Way'){

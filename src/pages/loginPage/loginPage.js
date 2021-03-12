@@ -40,12 +40,13 @@ const LoginPage = (props) => {
 		password: '',
 	})
 	useEffect(() => {
-		if (props.logindata.results || props.googlein.access_token) {
+		console.log('props',props.googlein)
+		if (props.logindata.results || props.googlein) {
 			props.history.push('/')
 		} else {
 			props.history.push('/login')
 		}
-	}, [props.logindata.results])
+	}, [props.logindata.results,props.googlein])
 	const onClickLogin = () => {
 		onEmailError()
 		{
@@ -91,7 +92,7 @@ const LoginPage = (props) => {
 	}
 	return (
 		<div className='LoginMainContainer'>
-			<div className='MainContainer'>
+			<div className='OuterMainContainer'>
 				<Form className='LoginInnerMainContainer'>
 					<div className='LoginButtonContainer'>
 						<div className='LoginTitleTextConatiner'>
@@ -106,7 +107,7 @@ const LoginPage = (props) => {
 							<GoogleLogin
 								className='LoginGoogleLoginButton'
 								style={{ fontSize: 30, width: 70 }}
-								clientId='737555203672-4n453vuqglt2lv26ce5fn2mgkpta51at.apps.googleusercontent.com'
+								clientId='103186051262-njimhihhe93suh76chvsp3jkdrub95ck.apps.googleusercontent.com'
 								onSuccess={responseGoogle}
 								// onFailure={responseGoogle}
 							>
@@ -214,7 +215,7 @@ const LoginPage = (props) => {
 const mapStateToProps = (state) => ({
 	logindata: state.loginReducer.data,
 	loggedin: state.loginReducer.loggedin,
-	googlein: state.loginReducer.googledata,
+	googlein: state.loginReducer.googledata.results,
 	message: state.loginReducer.error,
 })
 export default connect(mapStateToProps, { loginAction, googleLoginAction })(
