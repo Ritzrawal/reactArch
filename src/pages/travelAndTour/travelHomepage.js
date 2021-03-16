@@ -21,13 +21,13 @@ const TravelTourPage = () => {
     e.target.style.color = 'black'
     history.push("/flight");
   };
-  const onSearchBus = () => {
-    history.push("/bus/search");
-  };
   const onClickTravel=()=>{
     history.push("/travel");
 
   }
+  const onClickSearch = () => {
+    history.push("/travel/search");
+  };
   return (
     <div>
       <HeaderPage />
@@ -62,7 +62,7 @@ const TravelTourPage = () => {
             </ButtonGroup>
           </div>
           <div className="SeachContainerComponent">
-            <SearchBusComponent />
+            <SearchBusComponent  onSearchDetails={onClickSearch}/>
           </div>
         </div>
         </div>

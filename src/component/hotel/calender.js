@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
-import { DateRangePicker } from 'react-dates';
+import { DateRangePicker,SingleDatePicker } from 'react-dates';
 
 class Calender extends Component {
   constructor(props) {
@@ -30,5 +30,18 @@ class Calender extends Component {
     );
   }
 }
+export const SingleCalender=()=>{
+  const [date, setDate] = useState()
+  const [focused, setFocused] = useState()
 
+  return(
+<SingleDatePicker
+  date={date} 
+  onDateChange={date => setDate( date )}
+  focused={focused}
+  onFocusChange={({ focused }) => setFocused( focused )} // PropTypes.func.isRequired
+  id="your_unique_id" // PropTypes.string.isRequired,
+/>
+  )
+}
 export default Calender;

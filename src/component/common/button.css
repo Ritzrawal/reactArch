@@ -224,3 +224,8 @@ height: 150px;
   outline:none!important
 }
 
+/* filter of airlince component */
+.FlightCustomizeButtons{
+  display: flex;
+}
+

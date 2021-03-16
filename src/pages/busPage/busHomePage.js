@@ -62,7 +62,7 @@ const BusHomePage = () => {
             </ButtonGroup>
           </div>
           <div className="SeachContainerComponent">
-            <SearchBusComponent />
+            <SearchBusComponent onSearchDetails={onSearchBus}/>
           </div>
         </div>
         </div>

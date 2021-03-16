@@ -11,6 +11,7 @@ import {
 } from "reactstrap";
 import "./componentstyle.css";
 import InputCheckBox from './common/checkbox' 
+import {SingleCalender} from './hotel/calender'
 import Calender from './hotel/calender'
 import SwitchButtonComponent from "./common/switchButton";
 import {
@@ -89,12 +90,13 @@ const SearchFlightComponent = (props) => {
             </div>
           ) : (
             <FormGroup className="InputOuterStyleOneWay">
-              <Input
+              <SingleCalender/>
+              {/* <Input
                 className="InputCustomize"
                 type="date"
                 name="date"
                 placeholder="Depart"
-              />
+              /> */}
             </FormGroup>
           )}
         </Row>

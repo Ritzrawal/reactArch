@@ -17,6 +17,7 @@ import {AccountAddress,
   SearchDisplayPage,
   LoginPage,
   Payment,
+  BusSeaarchListPage,
   TravelSearchPage,
   ForgetPassword} from '../pages'
  const RouterConfiguration=() =>{
@@ -30,7 +31,7 @@ import {AccountAddress,
           <Route exact path="/hotel/search" component={SearchDisplayPage} />
           <Route exact path="/flight" component={FlightHomePage} />
           <Route exact path="/travel" component={TravelTourPage} />
-          <Route exact path="/travel/search" component={TravelSearchPage} />
+          <Route exact path="/travel/search" component={BusSeaarchListPage} />
           <Route exact path="/flight/search" component={AirlineSeaarchPage} />
           <Route exact path="/flight/details" component={DetailAirplane} />
           <Route exact path="/bus" component={BusHomePage} />

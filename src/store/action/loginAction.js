@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {LOGIN,LOGIN_ERROR,GOOGLE_LOGIN,FACE_LOGIN,SIGN_UP,SINGNUP_ERROR,
     FORGET_PASSWORD,PASSWORD_ERROR,NEW_PASSWORD,SWITCH_ACTIVE,SWITCH_INACTIVE} from '../constant';
-const baseUrl = 'http://3.134.77.36/api/v1'
+const baseUrl = 'http://3.18.186.95/api/v1'
 
 export const loginAction = (email, password) => (
 	dispatch

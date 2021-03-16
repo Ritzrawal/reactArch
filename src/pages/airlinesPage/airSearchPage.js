@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AirSearchCompnent } from "../../component";
+import { AirSearchCompnent,FiterTopComponent } from "../../component";
 import FilterPage from "./filterPage";
 import Data from "../../utils/searchData";
 import "./airlinesStyling.css";
@@ -21,7 +21,9 @@ const AirlineSeaarchPage = () => {
           <FilterPage />
         </div>
         <div className="SearchCardCustomize">
+          
             <div className="CheapestFilterContainer">
+            {/* <FiterTopComponent/> */}
                 <div className="FlightInnerLogoAndCustomize">
                     <div className="LogoOFilter">
                         <FontAwesomeIcon size='2x'  className="FilterLogoCustomize" icon={faDollarSign}/>

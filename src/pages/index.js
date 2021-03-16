@@ -1,5 +1,6 @@
 import AccountAddress from './accountPage/billingAddress'
 import TravelSearchPage from './travelAndTour/travelSearchPage'
+import BusSeaarchListPage from './travelAndTour/travelSearchDetails'
 import TravelTourPage from './travelAndTour/travelHomepage'
 import FlightHomePage from './airlinesPage/flightHomePage'
 import BusHomePage from './busPage/busHomePage'
@@ -20,5 +21,6 @@ export {
     LoginPage,
     ForgetPassword,
     Payment,
-    TravelSearchPage
+    TravelSearchPage,
+    BusSeaarchListPage
 }

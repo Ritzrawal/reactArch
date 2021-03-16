@@ -6,36 +6,42 @@ import {
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import PropType from "prop-types";
+import {useHistory} from 'react-router-dom'
 import { Card, Button } from "reactstrap";
 import "./travelTour.css";
-const TravelSearchPage = ({ name, image, switchActive, onClick }) => {
+const TravelSearchPage = ({ name,image ,image1,image2,image3, switchActive, onClick }) => {
+  let history = useHistory();
+
+  const onBooking = () => {
+    history.push("/booking");
+  };
   const onShowDetails = () => {
     onClick();
   };
   return (
     <Card className="CardStylingHotel">
       <div className="MainCardContainer">
-        <div className="ImageContainer">
-          <div className="UpperContainerImage">
+        <div className="TravelImageContainer">
+          <div className="TravelUpperContainerImage">
             <img className="ImageStyle" src={image} alt="" />
           </div>
-          <div className="LowerImageContainer">
+          <div className="TravelLowerImageContainer">
             <div className="SmallImage">
-              <img className="ImageStyle" src={image} alt="" />
+              <img className="ImageStyle" src={image1} alt="" />
             </div>
             <div className="SmallImage">
-              <img className="ImageStyle" src={image} alt="" />
+              <img className="ImageStyle" src={image2} alt="" />
             </div>
             <div className="SmallImage">
-              <img className="ImageStyle" src={image} alt="" />
+              <img className="ImageStyle" src={image3} alt="" />
             </div>
           </div>
         </div>
         <div className="TravelContainDetails">
-          <div className="HeaderHotels">
+          <div className="TravelHeaderHotels">
             <div className="TravelHeaderTextContainer">
               <div className="HeaderText">
-                <text>Yellow Pagoda Hotel</text>
+                <text>{name}</text>
               </div>
               <div className="RatingDispaly">
                 <FontAwesomeIcon icon={faStar} />
@@ -70,7 +76,7 @@ const TravelSearchPage = ({ name, image, switchActive, onClick }) => {
             <div className="TotalPriceDisplay">$1205</div>
             <div className="TotalPricePersion">Per persion including all taxes and feed</div>
             <div className="TravelShowMoreContainer">
-        <Button className="ShowmoreButton" onClick={onShowDetails}>
+        <Button className="ShowmoreButton" onClick={onBooking}>
           Continue
           <FontAwesomeIcon className="IconCustomize" icon={faAngleRight} />
         </Button>

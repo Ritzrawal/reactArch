@@ -1,16 +1,14 @@
 import React,{useState} from 'react'
 import {AirSearchCompnent} from '../../component'
+import TravelSearchPage from './travelSearchPage'
 import FilterPage from "../airlinesPage/filterPage";
 import DetailAirplane from "../airlinesPage/detailsAirplane";
 import Data from '../../utils/searchData'
 // import './airlinesStyling.css'
 import HeaderPage from '../headePage/headerPage'
-const BusSeaarchPage=()=>{
+const BusSeaarchListPage=()=>{
     const [show, setShow] = useState(false);
 
-  const onDisplay = () => {
-    setShow(!show);
-  };
     return(
         <div className="AirlinesMainContainer">
         <HeaderPage />
@@ -23,12 +21,11 @@ const BusSeaarchPage=()=>{
             return (
               <div className="FlightCardMapContainer">
                 <div className="FlightInnerContainer">
-                  <AirSearchCompnent
-                   image={items.bus} title={items.busname} details="Bus Details"
-                    onDisplay={onDisplay}
-                    show={show}
+                  <TravelSearchPage
+                   image={items.travel} name={items.travelitle} image1={items.travelsmall1}image2={items.travelsmall2}image3={items.travelsmall3}details="Travel  Details"
+                   
                   />
-                  {show && <DetailAirplane />}
+                  
                 </div>
               </div>
             );
@@ -38,4 +35,4 @@ const BusSeaarchPage=()=>{
       </div>
     )
 }
-export default BusSeaarchPage
+export default BusSeaarchListPage

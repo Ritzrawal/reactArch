@@ -40,7 +40,7 @@ const HeaderPage = () => {
 						</NavLink>
 					</NavItem>
 					<NavItem className='NavTextCustomize'>
-						<NavLink href='/bus'>
+						<NavLink href='/travel'>
 							<text className='HeaderTextCustomize'>Tours & Travels</text>
 						</NavLink>
 					</NavItem>
