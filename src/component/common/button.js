@@ -5,19 +5,19 @@ import { Button, ButtonGroup } from 'reactstrap'
 const buttontitle = [
 	{
 		name: 'Hotel',
-		value: 'Hotel',
+		value: '1',
 	},
 	{
 		name: 'Flight',
-		value: 'Flight',
+		value: '2',
 	},
 	{
 		name: 'Bus',
-		value: 'Bus',
+		value: '3',
 	},
 	{
 		name: 'Tours & Travel',
-		value: 'Tours & Travel',
+		value: '4',
 	},
 ]
 const ButtonComponent = ({ buttonTitle, width, title,clickHandler }) => {
@@ -38,27 +38,27 @@ const ButtonComponent = ({ buttonTitle, width, title,clickHandler }) => {
 	)
 }
 const HeaderButtonComponent = (props) => {
-	const [activeButton, setActiveButton] = useState(buttontitle[0].name)
+	const [activeButton, setActiveButton] = useState(buttontitle[props.id].name)
 	let history = useHistory();
-	const onSideBtnClick = (e) => {	
+	const  onSideBtnClick =async (e) => {	
 		console.log("state value",activeButton)	
 		const name = e.target.name
-		console.log("target",name)	
-		setActiveButton(name)
-		// if(name==='Hotel'){
-		// 	history.push("/hotel");
-		// }
-		//  if(name==='Flight'){
-		// 	history.push("/flight");
-		// }
-		// else if(name==='Bus'){
+		console.log("target",props.id)	
+		if(e.target.id==1){
+			history.push("/hotel");
+		}
+		else if(e.target.id==2){
+			history.push("/flight");
+		}
+		else if(e.target.id==3){
 
-		// 	history.push("/bus");
-		// }
-		// else{
-		// 	history.push("/travel");
+			history.push("/bus");
+		}
+		else{
+			history.push("/travel");
 
-		// }
+		}
+		await setActiveButton(name)
 
           
 	}
@@ -67,13 +67,13 @@ const HeaderButtonComponent = (props) => {
 		<ButtonGroup className='OuterButtonGroupHome'>
 			{buttontitle.map((it, i) => {
 				const className =
-					activeButton === it.value ? ' ButtonClass' : 'ButtonClassActive'
+					activeButton === it.name ? ' ButtonClassActive ' : 'ButtonClass'
 					console.log('classname',className)
 				return (
 					<Button
                     {...props}
 						key={i}
-						value={it.value}
+						id={it.value}
 						name={it.name}
 						onClick={onSideBtnClick}
 						className={` ${className}`}

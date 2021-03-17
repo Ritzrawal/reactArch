@@ -2,8 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, Redirect, withRouter } from "react-router-dom";
 
-const PrivateRoute = ({ component, auth, ...rest }) => {
-  let ComponentToRender = component;
+const PrivateRoute = ({ component: Component, auth, ...rest }) => {
 
   return (
     <Route
@@ -11,11 +10,11 @@ const PrivateRoute = ({ component, auth, ...rest }) => {
       render={props =>
         auth
           ? console.log("Trying to render component") || (
-              <ComponentToRender {...props} />
+              <Component {...props} />
             )
           : console.log("Redirected") || (
               <Redirect
-                to={{ pathname: "/", state: { from: props.location } }}
+                to={{ pathname: "/login", state: { from: props.location } }}
               />
             )
       }

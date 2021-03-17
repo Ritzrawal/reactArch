@@ -3,6 +3,7 @@ import HeaderPage from "../headePage/headerPage";
 import "../homePage/homeStyles.css";
 import { ButtonGroup, Button } from "reactstrap";
 import { useHistory } from "react-router-dom";
+import {HeaderButtonComponent} from '../../component/common/button'
 import SearchBusComponent from "../../component/searchBusComponent";
 
 import LowerHomepage from "../homePage/lowerHomepage";
@@ -38,28 +39,8 @@ const BusHomePage = () => {
         <div className="SearchMainContainer">
         <div className="SearchInnerComponent">
           <div className="TopButtonContainer">
-            <ButtonGroup className="ButtonGroupComponent">
-              <Button
-                className="ButtonClass"
-                name="hotel"
-                onClick={onClickHotel}
-              >
-                Hotel
-              </Button>
-              <Button
-                className="ButtonClass"
-                name="Flight"
-                onClick={onClickFlight}
-              >
-                Flight
-              </Button>
-              <Button className="ButtonClass" onClick={onClickBus}>
-                Bus
-              </Button>
-              <Button className="ButtonClass" onClick={onClickTravel}>
-              Tours & Travels
-              </Button>
-            </ButtonGroup>
+          <HeaderButtonComponent id={2}/>
+
           </div>
           <div className="SeachContainerComponent">
             <SearchBusComponent onSearchDetails={onSearchBus}/>

@@ -123,13 +123,6 @@ line-height: 20px;
     margin-left: 15px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-/* .CardImageStyling{
-width:100%;
-height: 150px;
-}
-.CardImageStyling:hover{
-  transform: scale(1.1);
-} */
  .CardImageStyling {
   display: inline-block;
   height: 150px;
@@ -139,6 +132,9 @@ height: 150px;
   cursor: pointer;
   display: block;
   transition: transform .4s;  
+}
+.OuterButtonGroupHome{
+  width: 50%;
 }
 .CardImageStyling:hover img {
   cursor: pointer!important;

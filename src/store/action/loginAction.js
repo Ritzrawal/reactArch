@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {LOGIN,LOGIN_ERROR,GOOGLE_LOGIN,FACE_LOGIN,SIGN_UP,SINGNUP_ERROR,
     FORGET_PASSWORD,PASSWORD_ERROR,NEW_PASSWORD,SWITCH_ACTIVE,SWITCH_INACTIVE} from '../constant';
-const baseUrl = 'http://3.18.186.95/api/v1'
+const baseUrl = 'http://admin.neplove.com/api/v1'
 
 export const loginAction = (email, password) => (
 	dispatch
@@ -14,6 +14,8 @@ export const loginAction = (email, password) => (
 		})
 		.then((res) => {
 			console.log('signin', res)
+			localStorage.setItem('token', res.data.data.access_token)
+			console.log('local token', res.data.data.access_token)
 			dispatch({
 				type: LOGIN,
 				payload: res,

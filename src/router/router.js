@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import PrivateRoute  from './privateroute'
 import DetailAirplane from '../pages/airlinesPage/detailsAirplane'
 import AirlineSeaarchPage from '../pages/airlinesPage/airSearchPage'
 import Homepage from '../pages/homePage/homePage'
