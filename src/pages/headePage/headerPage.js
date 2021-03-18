@@ -41,7 +41,7 @@ const HeaderPage = () => {
 					</NavItem>
 					<NavItem className='NavTextCustomize'>
 						<NavLink href='/travel'>
-							<text className='HeaderTextCustomize'>Tours & Travels</text>
+							<text className='HeaderTextCustomize'>Travel & Tours</text>
 						</NavLink>
 					</NavItem>
 				</div>

@@ -1,6 +1,7 @@
 // Imports: Dependencies
 import {combineReducers} from 'redux';
 import loginReducer from './loginReducer';
+import hotelReducer from './hotelReducer'
 
 
 // Imports: Reducers
@@ -8,6 +9,7 @@ import loginReducer from './loginReducer';
 // Redux: Root Reducer
 const rootReducer = combineReducers({
   loginReducer: loginReducer,
+  hotelReducer:hotelReducer,
 
 
 

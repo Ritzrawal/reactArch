@@ -16,7 +16,7 @@ const buttontitle = [
 		value: '3',
 	},
 	{
-		name: 'Tours & Travel',
+		name: 'Travel & Tours ',
 		value: '4',
 	},
 ]

@@ -8,18 +8,15 @@ import {
   Label,
   Button,
   ButtonGroup,
+  ButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle
 } from "reactstrap";
+import { } from 'reactstrap';
+
 import "./componentstyle.css";
 import InputCheckBox from './common/checkbox' 
 import {SingleCalender} from './hotel/calender'
 import Calender from './hotel/calender'
 import SwitchButtonComponent from "./common/switchButton";
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
 import{useHistory} from 'react-router-dom'
 import { connect } from "react-redux";
 const buttontitle = [
@@ -33,7 +30,9 @@ const buttontitle = [
   },
 ];
 const SearchFlightComponent = (props) => {
+  const [dropdownOpen, setOpen] = useState(false);
 
+  const toggle = () => setOpen(!dropdownOpen);
   // const [activeButton, setActiveButton] = useState(buttontitle[0].name)
 
   let history = useHistory();
@@ -71,22 +70,6 @@ const SearchFlightComponent = (props) => {
                <div className="CalenderCustomize">
           <Calender />
           </div>
-              {/* <FormGroup className="InputOuterStyleRounderWay">
-                <Input
-                  className="InputCustomize"
-                  type="date"
-                  name="date"
-                  placeholder="Depart"
-                />
-              </FormGroup>
-              <FormGroup className="InputOuterStyleReturn">
-                <Input
-                  className="InputCustomize"
-                  type="date"
-                  name="return_date"
-                  placeholder="Return"
-                />
-              </FormGroup> */}
             </div>
           ) : (
             <FormGroup className="InputOuterStyleOneWay">
@@ -109,33 +92,28 @@ const SearchFlightComponent = (props) => {
             </Label>
           </FormGroup> */}
           <div className="Passenger">
-            <FormGroup className="PassengerType">
-              <Input
-                type="select"
-                name="select"
-                className="PassengerTypeInput"
-                id="exampleSelect"
-              >
-                <option>1 Passenger</option>
-                <option>2 Passenger</option>
-                <option>3 Passenger</option>
-                <option>4 Passenger</option>
-                <option>5 Passenger</option>
-              </Input>
-            </FormGroup>
-            <FormGroup className="ClassType">
-              <Input
-                type="select"
-                className="ClassTypeInput"
-                name="select"
-                id="exampleSelect"
-              >
-                <option>Economy</option>
-                <option>Premium Economy</option>
-                <option>First Class</option>
-                <option>Business Class</option>
-              </Input>
-            </FormGroup>
+          <ButtonDropdown isOpen={dropdownOpen} toggle={toggle} className="DropDownMewnuCustomize">
+      <DropdownToggle caret className="ToogleDropDownMenu" color="#FFFF">
+        Button Dropdown
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem>1 Passenger</DropdownItem>
+        <DropdownItem >2 Passenger</DropdownItem>
+        <DropdownItem>3 Passenger</DropdownItem>
+        <DropdownItem>4 Passenger</DropdownItem>
+      </DropdownMenu>
+    </ButtonDropdown>
+    <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+      <DropdownToggle caret>
+        Button Dropdown
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem >Economy</DropdownItem>
+        <DropdownItem >First Class</DropdownItem>
+        <DropdownItem>Business Class</DropdownItem>
+        <DropdownItem>Premium Economy</DropdownItem>
+      </DropdownMenu>
+    </ButtonDropdown>
           </div>
           <div className="PassengerButton">
             <Button className="ButtonSearch" onClick={onClickSearch}>Search</Button>

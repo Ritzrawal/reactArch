@@ -8,19 +8,6 @@ import SearchHotelComponent from '../../component/searchHotelComponent'
 import LowerHomepage from "../homePage/lowerHomepage";
 const HotelHomePage = () => {
   let history = useHistory();
-
-  const onClickHotel = () => {
-    history.push("/hotel");
-  };
-  const onClickBus = () => {
-    history.push("/bus");
-  };
-  const onClickFlight = () => {
-    history.push("/flight");
-  };
-  const onClickTravel=()=>{
-    history.push("/travel");
-  }
   return (
     <div>
       <HeaderPage />

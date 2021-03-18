@@ -10,25 +10,10 @@ import LowerHomepage from "../homePage/lowerHomepage";
 const BusHomePage = () => {
   let history = useHistory();
 
-  const onClickHotel = () => {
-    history.push("/hotel");
-  };
-  const onClickBus = () => {
-    history.push("/bus");
-  };
-  const onClickFlight = (e) => {
-    console.log("this is working fine");
-    e.preventDefault();
-    e.target.style.color = 'black'
-    history.push("/flight");
-  };
   const onSearchBus = () => {
     history.push("/bus/search");
   };
-  const onClickTravel=()=>{
-    history.push("/travel");
-
-  }
+  
   return (
     <div>
       <HeaderPage />

@@ -187,10 +187,8 @@
   }
   .ButtonCustomize {
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
   .ButtonCustomizeStyling {
     height: 50px;

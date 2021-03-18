@@ -51,7 +51,7 @@ const SignupPage = (props) => {
 		onLastNameError()
 		onNameError()
 		onEmailError()
-		form.email.trim().length === 0 ? serError(true) : serError(false),
+		form.email.trim().length === 0 ? serError(true) : serError(false)
 			props.signupAction(
 				form.first_name,
 				form.last_name,
@@ -61,38 +61,20 @@ const SignupPage = (props) => {
 			)
 	}
 	const onEmailError = () => {
-		form.password.trim().length === 0 ? serPasError(true) : serPasError(false),
-			props.signupAction(
-				form.first_name,
-				form.last_name,
-				form.email,
-				form.password,
-				form.role
-			)
+		form.password.trim().length === 0 ? serPasError(true) : serPasError(false)
+		
 	}
 	const onNameError = () => {
 		form.first_name.trim().length === 0 && form.last_name.trim().length === 0
 			? setFirstError(true)
-			: setFirstError(false),
-			props.signupAction(
-				form.first_name,
-				form.last_name,
-				form.email,
-				form.password,
-				form.role
-			)
+			: setFirstError(false)
+			
 	}
 	const onLastNameError = () => {
 		form.last_name.trim().length === 0
 			? setLastError(true)
-			: setLastError(false),
-			props.signupAction(
-				form.first_name,
-				form.last_name,
-				form.email,
-				form.password,
-				form.role
-			)
+			: setLastError(false)
+			
 	}
 
 	const responseGoogle = (response) => {

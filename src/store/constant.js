@@ -12,6 +12,6 @@ export const NEW_PASSWORD='NEW_PASSWORD'
 export const FACE_LOGIN='FACE_LOGIN'
 
 export const HOTEL_INFO ='HOTEL_INFO'
-
+export const HOTEL_LIST ='HOTEL_LIST'
 
 

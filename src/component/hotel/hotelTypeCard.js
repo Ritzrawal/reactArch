@@ -21,7 +21,7 @@ import {
   CardSubtitle,
   Button,
 } from "reactstrap";
-const HotelTypeComponent = ({ image,onClick }) => {
+const HotelTypeComponent = ({ image,onClick,hoteltype }) => {
   let history=useHistory();
 const onBooking=()=>{
   history.push("/booking")
@@ -33,7 +33,7 @@ const onBooking=()=>{
       </div>
       <div className="RightContainContainer">
         <div className="TopContainDetails">
-          <div className="HotelTypeTitle">Delux room,City View tower</div>
+          <div className="HotelTypeTitle">{hoteltype}</div>
           <div className="FeaturesContainer">
             <div className="FeaturesItems">
               <FontAwesomeIcon className="IconFeatures" icon={faUsers} />
