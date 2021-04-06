@@ -7,10 +7,21 @@ const SearchData=[
     busname:"Nepal Yatayat",
     travelitle:'NepLove Tours and Travel',
     description:"Neplove web app description",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     travel:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
-    travelsmall1:'https://www.andbeyond.com/wp-content/uploads/sites/5/pokhara-valley-nepal.jpg',
-    travelsmall2:'https://www.andbeyond.com/wp-content/uploads/sites/5/pokhara-valley-nepal.jpg',
-    travelsmall3:'https://www.andbeyond.com/wp-content/uploads/sites/5/pokhara-valley-nepal.jpg',
+   
     hotel:'https://i.pinimg.com/originals/7c/66/3c/7c663c1ff06dcac08c3e630d104cae64.jpg',
     air:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDKZWd52I5qjHuGTtMi7RvUdHiJpnu1S-aQ&usqp=CAU',
     bus:"https://lh3.googleusercontent.com/proxy/cJ0wzWzNXBem3PPKPyGO969OiMqIJ6IaNHpL5GjVCprEKhWP9z_2Rn49GsQKmEuJkgXc4Gwqk732AssjgV8tgA4utpkOoH0",
@@ -33,7 +44,20 @@ const SearchData=[
     hotel:'https://lh3.googleusercontent.com/proxy/zh5DU_bRK0vP2AD1E6zQNsi9RauXFx-MtVs1Fo9muDqfilLWRg2wxC-4SLE6eZGd2smDobJ81-L8rmE9tpcFd0m35A9F99S2IUBs0cUPpyxv71b0LPI0evvL5Pc',
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     image:'http://aff.bstatic.com/images/hotel/max1024x768/274/274600045.jpg',
-    bus:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPDOamV84cN6BrxmTii1Gp0Q36r1MJvne9Q&usqp=CAU'
+    bus:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPDOamV84cN6BrxmTii1Gp0Q36r1MJvne9Q&usqp=CAU',
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
 
 },
 {
@@ -48,6 +72,19 @@ const SearchData=[
     travelsmall2:'https://risingnepaldaily.com/banner_image/5f52e84bdfe21_4.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     description:"Neplove web app description",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     hotel:'https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     image:'https://cdn.bestday.net/_lib/vimages/Tegucigalpa/Hotels/hotel-real-intercontinental-tegucigalpa/fachada_g.jpg',
@@ -65,6 +102,19 @@ const SearchData=[
     travelsmall2:'https://risingnepaldaily.com/banner_image/5f52e84bdfe21_4.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     description:"Neplove web app description",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     hotel:'https://specials-images.forbesimg.com/imageserve/5ec567daf2098c0006c6036e/960x0.jpg?fit=scale',
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQNE4XCma_Xt-d3XJp0FF_VZuJUu4d2xWsXg&usqp=CAU',
@@ -83,6 +133,19 @@ const SearchData=[
     travelsmall2:'https://risingnepaldaily.com/banner_image/5f52e84bdfe21_4.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     description:"Neplove web app description",
+    images:[
+        {
+        travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+        },{
+            travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+        },
+        {
+            travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+        
+  
+  
+        }
+    ],
     hotel:'https://mazharmemon.files.wordpress.com/2018/01/safari-court-hotel-pool.jpg',
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     bus:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcEaup2Wz1ELEgjJUO9Y6dVEuR0fS2jgDsqg&usqp=CAU',
@@ -102,6 +165,19 @@ const SearchData=[
     travelsmall2:'https://risingnepaldaily.com/banner_image/5f52e84bdfe21_4.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     description:"Neplove web app description",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROPENLCdOsCcBwE_v8YbKFIDzdsOQoZIDyQ&usqp=CAU',
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     image:'http://aff.bstatic.com/images/hotel/max1024x768/274/274600045.jpg',
@@ -122,6 +198,19 @@ const SearchData=[
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     airname:"Air Canada",
     busname:"Nepal Yatayat",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     image:'https://cdn.bestday.net/_lib/vimages/Tegucigalpa/Hotels/hotel-real-intercontinental-tegucigalpa/fachada_g.jpg',
     bus:'https://i.ytimg.com/vi/0t_qRc8356Y/maxresdefault.jpg'
 
@@ -139,6 +228,19 @@ const SearchData=[
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
     airname:"Air Canada",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     busname:"Nepal Yatayat",
     image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQNE4XCma_Xt-d3XJp0FF_VZuJUu4d2xWsXg&usqp=CAU',
     bus:'https://assetsw.bus.com/content/uploads/2020/02/14170850/Charter-Bus-Rentals-Photo.jpg'
@@ -154,6 +256,19 @@ const SearchData=[
     travelsmall2:'https://www.khaptadnationalpark.gov.np/wp-content/themes/khaptad-national-park/data1/images/khaptad5.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     busname:"Nepal Yatayat",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     description:"Neplove web app description",
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
 
@@ -173,6 +288,20 @@ const SearchData=[
     travelsmall2:'https://risingnepaldaily.com/banner_image/5f52e84bdfe21_4.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     description:"Neplove web app description",
+    images:[
+        
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     air:'https://www.webdesignerdepot.com/cdn-origin/uploads/2009/03/aircanada.gif',
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
 
@@ -193,6 +322,20 @@ const SearchData=[
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     busname:"Nepal Yatayat",
     description:"Neplove web app description",
+    images:[
+        
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     air:'https://cdn.shopify.com/s/files/1/2604/4866/products/Delta_Airlines-1_740x.jpg?v=1555424408',
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
 
@@ -212,6 +355,19 @@ const SearchData=[
     travelsmall2:'https://risingnepaldaily.com/banner_image/5f52e84bdfe21_4.jpg',
     travelsmall3:'https://www.traveller.com.au/content/dam/images/g/o/3/6/k/o/image.related.articleLeadwide.620x349.go36hx.png/1460702656253.jpg',
     description:"Neplove web app description",
+    images:[
+        {
+            travelsmall:'https://www.holymountaintreks.com/uploads/2019/06/gokyo.jpg'
+            },{
+                travelsmall:'https://www.hopnepal.com/userfiles/images/UpperDolpaTrek.jpg',
+            },
+            {
+                travelsmall:'https://i.pinimg.com/originals/47/f0/ed/47f0edc0df5c4a0c8ed8f81808303b86.jpg',
+            
+      
+      
+            }
+    ],
     hotel:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
 
     air:"https://image.shutterstock.com/image-vector/singapore-airlines-logo-vector-icon-260nw-1520210225.jpg",

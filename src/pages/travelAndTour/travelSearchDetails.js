@@ -22,6 +22,7 @@ const BusSeaarchListPage=()=>{
               <div className="FlightCardMapContainer">
                 <div className="FlightInnerContainer">
                   <TravelSearchPage
+                   images={items.images}
                    image={items.travel} name={items.travelitle} image1={items.travelsmall1}image2={items.travelsmall2}image3={items.travelsmall3}details="Travel  Details"
                    
                   />

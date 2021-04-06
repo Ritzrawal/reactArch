@@ -20,6 +20,7 @@ import {AccountAddress,
   Payment,
   BusSeaarchListPage,
   TravelSearchPage,
+  TravelToursDetail,
   ForgetPassword} from '../pages'
  const RouterConfiguration=() =>{
   return (
@@ -30,13 +31,20 @@ import {AccountAddress,
           <Route exact path="/signup" component={SignupPage} />
           <Route exact path="/hotel" component={HotelHomePage} />
           <Route exact path="/hotel/search" component={SearchDisplayPage} />
-          <Route exact path="/flight" component={FlightHomePage} />
+          
+
           <Route exact path="/travel" component={TravelTourPage} />
           <Route exact path="/travel/search" component={BusSeaarchListPage} />
+          <Route exact path="/travel/details" component={TravelToursDetail} />
+
+
+          <Route exact path="/flight" component={FlightHomePage} />
           <Route exact path="/flight/search" component={AirlineSeaarchPage} />
           <Route exact path="/flight/details" component={DetailAirplane} />
+
           <Route exact path="/bus" component={BusHomePage} />
           <Route exact path="/bus/search" component={BusSeaarchPage} />
+
           <Route exact path="/booking" component={AccountAddress} />
           <Route exact path="/payment" component={Payment} />
           <Route exact path ="/change-password" component={ForgetPassword}/>

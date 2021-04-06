@@ -9,6 +9,7 @@ import LoginPage from './loginPage/loginPage'
 import ForgetPassword from './loginPage/forgetPassword'
 import Payment from './accountPage/stripePaymet'
 import HotelHomePage from './hotelPage/hotelHomePage'
+import TravelToursDetail from './travelAndTour/travelToursDetail'
 import SearchDisplayPage from './hotelPage/searchDisplayPage'
 export {
     AccountAddress,
@@ -22,5 +23,6 @@ export {
     ForgetPassword,
     Payment,
     TravelSearchPage,
-    BusSeaarchListPage
+    BusSeaarchListPage,
+    TravelToursDetail
 }

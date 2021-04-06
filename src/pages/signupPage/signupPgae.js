@@ -116,9 +116,9 @@ const SignupPage = (props) => {
 
 	return (
 		<div className='SignupMainContainer'>
-			<div className='MainContainer'>
+			<div className='SignupCustomizeMainContainer'>
 				<Form className='InnerMainContainer'>
-					<div className='SignupButtonContainer'>
+					<div className='SignupButtonContainerCustom'>
 						<div className='TitleTextConatiner'>
 							<Link style={{ textDecoration: 'none' }} to='/'>
 								<text className='TitleText'>NepLove</text>

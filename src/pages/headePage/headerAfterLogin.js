@@ -11,8 +11,9 @@ import {
 	NavbarText,
 } from 'reactstrap'
 import './headerPage.css'
+import ProfileImage from '../../assets/images/profile.png'
 import {withRouter} from 'react-router-dom'
-const HeaderPage = (props) => {
+const HeaderPageLogin = (props) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const toggle = () => setIsOpen(!isOpen)
 
@@ -72,18 +73,13 @@ const HeaderPage = (props) => {
 				</div>
 
 				<NavItem className='SignupButtonContainer'>
-					<NavLink href='/login'>
-						<text className="HeaderTextHeader" >Login</text>
-					</NavLink>
-				</NavItem>
-				<NavItem className='SignupButtonContainer'>
-					<NavLink href='/signup'>
-					<text  className="HeaderTextHeader">SignUp</text>
-					</NavLink>
+					<div className="ProfileIconCUstomize">
+                        <img src={ProfileImage} className="ProfileImageCustomize" />
+                    </div>
 				</NavItem>
 			</Nav>
 			</Collapse>
 		</Navbar>
 	)
 }
-export default withRouter(HeaderPage)
+export default withRouter(HeaderPageLogin)

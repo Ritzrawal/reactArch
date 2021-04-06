@@ -4,8 +4,9 @@
     /* align-items: center; */
 }
 .HotelCardMapContainer{
-    margin-bottom: 30px;
-    margin-top: 50px;
+    padding-top: 50px;
+    background-color: #f2f4fa;
+    padding-bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -71,4 +72,12 @@ font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 20px;
+}
+
+
+/* styling for card component */
+@media screen and (max-width: 480px) {
+    .HotelInnerContainer{
+        width: 100%;
+    }
 }

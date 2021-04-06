@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faAngleDown,faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import PropType from "prop-types";
@@ -15,10 +15,17 @@ import {
   Badge
 } from "reactstrap";
 import "./hotelComponent.css";
-const HotelCardSearch = ({ name, image,location,onClick,hoteltype,rate }) => {
+const HotelCardSearch = ({ name, image,location,onClick,hoteltype,rate,id }) => {
+  const [fetuteImage,setImage]=useState(image)
 
+
+  const onClickImage=()=>{
+    console.log("hello image")
+    setImage(image)
+  }
   const onShowDetails=()=>{
-    onClick()
+    console.log("Hello hotel props",id)
+    onClick(id)
     
   }
   return (
@@ -26,17 +33,17 @@ const HotelCardSearch = ({ name, image,location,onClick,hoteltype,rate }) => {
       <div className="MainCardContainer">
         <div className="ImageContainer">
             <div className="UpperContainerImage">
-                <img className="ImageStyle" src={image} alt="" />
+                <img className="ImageStyle" src={fetuteImage} alt="" />
             </div>
             <div className="LowerImageContainer">
                 <div className="SmallImage">
-                <img className="ImageStyle" src={image} alt="" />
+                <img className="ImageStyle" src={image} alt=""  onClick={onClickImage}/>
                 </div>
                 <div className="SmallImage">
-                <img className="ImageStyle" src={image} alt="" />
+                <img className="ImageStyle" src={image} alt=""  onClick={onClickImage}/>
                 </div>
                 <div className="SmallImage">
-                <img className="ImageStyle" src={image} alt="" />
+                <img className="ImageStyle" src={image} alt="" onClick={onClickImage}/>
                 </div>
             </div>
         </div>

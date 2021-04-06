@@ -3,6 +3,7 @@
     display: flex;
     height: 100%;
     display: flex;
+    background-color: #f2f4fa;
     justify-content: center;
     align-items: center;
   }
@@ -39,8 +40,10 @@
     line-height: 156.1%;
     color: #E3E9F1;
    }
-    .MainContainer{
+    .SignupCustomizeMainContainer{
       flex-grow: .5;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+      background-color: #FFFF;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -177,6 +180,9 @@
     text-transform: uppercase;
   }
   .ButtonContainer {
+  }
+  .SignupButtonContainerCustom{
+    margin-top: 2%;
   }
   .FormGroupCustomize {
     height: 60px;

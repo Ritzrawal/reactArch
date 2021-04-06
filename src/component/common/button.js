@@ -68,7 +68,6 @@ const HeaderButtonComponent = (props) => {
 			{buttontitle.map((it, i) => {
 				const className =
 					activeButton === it.name ? ' ButtonClassActive ' : 'ButtonClass'
-					console.log('classname',className)
 				return (
 					<Button
                     {...props}

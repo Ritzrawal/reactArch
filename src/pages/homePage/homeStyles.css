@@ -1,11 +1,11 @@
 .HomeMainContainer{
     width: 100%;
     /* height: 100vh; */
-    /* background-color: teal; */
+    background-color:#f2f4fa;
 }
 .BackgrundImageContainer{
     height: 300px;
-    /* background-color: tomato; */
+    background-color:#f2f4fa;
 }
 .BackGroundImage{
     background-image: url('../../assets//images/background.png');
@@ -15,12 +15,12 @@
     height: 100%;
 }
 .SearchMainContainer{
-    margin-top: -90px;
+    /* margin-top: -90px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: green; */
+    background-color:#f2f4fa;
 }
 .ButtonGroupComponent{
     height: 60px;
@@ -92,14 +92,15 @@ height: 60px;
     margin-right: 10px;
 }
 .SearchInnerComponent{
-    width:70%
+    width:70%;
+    margin-top:-90px;
 }
 .CardOuterComponent{
     margin-top: 100px;
 
 }
 .LowerHomepage{
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .RecomandedHotel{
     display: flex;
@@ -125,6 +126,7 @@ height: 60px;
     flex-direction: column;
     display: flex;
     justify-content: center;
+    background-color: #f2f4fa;
     align-items: center;
     width: 100%;
 }
@@ -208,5 +210,35 @@ a{
         display: flex;
         height: 300px;
         flex-direction: column;
+    }
+    .OuterButtonGroupHome{
+        width: 100%;
+    }
+    .OuterTextContainer{
+font-size: 15px!important;
+    }
+    .CalenderCustomize{
+     margin-left: 0px!important;
+     padding-bottom: 15px;
+    }
+    .LowerFlightButton{
+        display: block!important;
+    }
+    .PassengerButtonHotel{
+        justify-content: center!important;
+        width: 100%!important;
+        padding-right: 0px!important;
+    }
+    .ButtonSearch{
+width: 100%!important;
+    }
+    .DateInput{
+        width: 100%!important;
+    }
+    .SingleDatePicker{
+        width: 100%!important;
+    }
+    .SingleDatePickerInput__withBorder{
+        width: 100%;
     }
   }

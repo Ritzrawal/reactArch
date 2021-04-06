@@ -29,6 +29,16 @@ width: 100%;
 padding-left: 30px;
 }
 .InputOuterStyleFrom{
+    background-color: #fff;
+    border: 2px solid #c7d0de;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #808fa6;
 height: 60px;
 width: 30%;
 }
@@ -36,19 +46,58 @@ width: 30%;
     margin-left: 15px;
     height: 60px;
     width: 30%;
+    background-color: #fff;
+    border: 2px solid #c7d0de;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #808fa6;
 }
 .InputOuterStyleOneWay{
     height: 60px;
     margin-left: 15px;
 width: 35%;
+background-color: #fff;
+box-sizing: border-box;
+border-radius: 6px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+color: #808fa6;
 }
 .InputOuterStyleRounderWay{
     height: 60px;
     width: 50%;
+    background-color: #fff;
+    border: 2px solid #c7d0de;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #808fa6;
 }
 .InputOuterStyleReturn{
     height: 60px;
     width: 50%;
+    background-color: #fff;
+    border: 2px solid #c7d0de;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #808fa6;
 }
 .FlightDepartReturn{
     display: flex;
@@ -65,9 +114,14 @@ width: 35%;
 }
 .InputCustomize{
     height: 100%!important;
+    margin: 0!important;
 }
 .CalenderCustomize{
     margin-left: 15px;
+}
+.CalenderCustomizeHotel{
+    margin-left: 15px;
+    width: 40%; 
 }
 .DateRangePickerInput{
     display: flex;
@@ -76,13 +130,21 @@ width: 35%;
 
 }
 .DateInput{
-    width: auto!important;
+    width: auto;
 }
 .DateInput_input{
     height: 60px;
-    border-radius: .25rem;
-    border: 1px solid #ced4da
-
+    margin: 0!important;
+    background-color: #fff;
+border: 3px solid #c7d0de;
+box-sizing: border-box;
+border-radius: 6px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+color: #808fa6;
 }
 .DateInput_input:focus{
     color: #495057;
@@ -90,6 +152,9 @@ width: 35%;
     background-color: #fff;
     border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.DateInput_input::placeholder{
+    color: #808fa6;
 }
 .DateRangePickerInput_arrow{
     color:#2EC2E2!important;
@@ -119,6 +184,16 @@ border-style: none!important;
 .PassengerType{
     margin-right: 15px;
 
+}
+.DropDownMewnuCustomize{
+    box-shadow: none!important;
+}
+.DropDownMewnuCustomize button{
+    box-shadow: none!important;
+}
+.DropDownMewnuCustomize button:hover{
+    background-color: transparent;
+    transform: none!important;
 }
 .PassengerTypeInput{
     border-width: 0px!important;
@@ -157,6 +232,16 @@ padding-right: 2%;
 /* Hotel Seach COmponent Customize */
 .InputOuterStyleDest{
 height: 60px;
+background-color: #fff;
+border: 2px solid #c7d0de;
+box-sizing: border-box;
+border-radius: 6px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+color: #808fa6;
 width: 34%;
 }
 .InputOuterStyleCheckIn{
@@ -172,6 +257,51 @@ width: 34%;
     margin-left: 15px;
     width: 21%;
     height: 60px;
+    background-color: #fff;
+    border: 2px solid #c7d0de;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #808fa6;
+}
+.RoomsCounterCustomize{
+    display: flex;
+    justify-content: space-between;
+}
+.RoomsCustomize{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+   line-height: 20px;
+}
+.CouterNumerStyling{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 20px;
+   width: 36px;
+}
+.RoomsLogoCounter{
+    padding-left: 20px;
+display: flex;
+justify-content: flex-end;
+}
+.RoomsCounterCustomizeAdults{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.CustomizAwesomeIcon{
+    cursor: pointer;
+     color:#003580;
 }
 .PassengerButtonHotel{
     display: flex;
@@ -180,6 +310,14 @@ width: 34%;
     flex: auto;
     padding-right: 2%;
     margin-bottom: 10px;
+}
+.toast.show {
+    background-color: #FFFF;
+    z-index: 10;
+    position: absolute;
+    display: block;
+    opacity: 1;
+    width: 100%;
 }
 
 /* styling for card component */
@@ -216,6 +354,9 @@ width: 34%;
          .ButtonGroupComponent{
              width: 100%;
          }
+         .SignupButtonContainer{
+justify-content: flex-start;
+         }
          .TopButtonContainer{
 width: 100%;
          }
@@ -231,7 +372,8 @@ margin-bottom: 10px;
              width: 100%;
              height: auto;
              display: flex;
-             flex-wrap: wrap;
+             overflow: scroll;
+             /* flex-wrap: wrap; */
          }
          .ButtonClassCat{
              margin-bottom: 10px;

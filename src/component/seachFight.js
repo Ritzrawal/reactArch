@@ -31,7 +31,7 @@ const buttontitle = [
 ];
 const SearchFlightComponent = (props) => {
   const [dropdownOpen, setOpen] = useState(false);
-
+  const [lastClicked, setLastClicked] = useState(null);
   const toggle = () => setOpen(!dropdownOpen);
   // const [activeButton, setActiveButton] = useState(buttontitle[0].name)
 
@@ -40,6 +40,10 @@ const SearchFlightComponent = (props) => {
   const onClickSearch = () => {
     history.push("/flight/search");
   };
+  const onFormChange=(e)=>{
+  console.log("event",e.target.innerText)
+    setLastClicked(e.target.innerText)
+  }
   return (
     <Card className="CardComponent">
       <div className="ButtonContainer">
@@ -97,21 +101,21 @@ const SearchFlightComponent = (props) => {
         Button Dropdown
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>1 Passenger</DropdownItem>
+        <DropdownItem onClick={onFormChange}>1 Passenger</DropdownItem>
         <DropdownItem >2 Passenger</DropdownItem>
         <DropdownItem>3 Passenger</DropdownItem>
         <DropdownItem>4 Passenger</DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
-    <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-      <DropdownToggle caret>
+    <ButtonDropdown isOpen={dropdownOpen} toggle={toggle} className="DropDownMewnuCustomize">
+      <DropdownToggle caret className="ToogleDropDownMenu" color="#FFFF">
         Button Dropdown
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem >Economy</DropdownItem>
-        <DropdownItem >First Class</DropdownItem>
+        <DropdownItem>Economy</DropdownItem>
+        <DropdownItem >Premium Economy</DropdownItem>
         <DropdownItem>Business Class</DropdownItem>
-        <DropdownItem>Premium Economy</DropdownItem>
+        <DropdownItem>First Claass</DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
           </div>

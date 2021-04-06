@@ -59,7 +59,7 @@ color: #FFFFFF;
   }
   .SelectedButton:focus {
     outline: none;
-    box-shadow: none;
+    box-shadow: none!important;
   }
   .DisabledButtons{
     border-color:none!important;
@@ -81,7 +81,7 @@ line-height: 20px;
   }
   .DisabledButtons:focus {
     outline: none;
-    box-shadow: none;
+    box-shadow: none!important;
   }
   .ButtonStyling{
     display: flex;

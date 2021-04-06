@@ -13,5 +13,7 @@ export const FACE_LOGIN='FACE_LOGIN'
 
 export const HOTEL_INFO ='HOTEL_INFO'
 export const HOTEL_LIST ='HOTEL_LIST'
+export const HOTEL_DETAILS='HOTEL_DETAILS'
+export const HOTEL_SEARCH='HOTEL_SEARCH'
 
 

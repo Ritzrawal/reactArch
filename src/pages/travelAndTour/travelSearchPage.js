@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
@@ -9,11 +9,16 @@ import PropType from "prop-types";
 import {useHistory} from 'react-router-dom'
 import { Card, Button } from "reactstrap";
 import "./travelTour.css";
-const TravelSearchPage = ({ name,image ,image1,image2,image3, switchActive, onClick }) => {
+const TravelSearchPage = ({ images,name,image ,image1,image2,image3, switchActive, onClick }) => {
+  const [fetureImage,setImage]=useState(image)
   let history = useHistory();
 
+  const onImageClick=(e)=>{
+    console.log("images",e.target.src)
+    setImage(e.target.src)
+  }
   const onBooking = () => {
-    history.push("/booking");
+    history.push("/travel/details");
   };
   const onShowDetails = () => {
     onClick();
@@ -23,18 +28,23 @@ const TravelSearchPage = ({ name,image ,image1,image2,image3, switchActive, onCl
       <div className="MainCardContainer">
         <div className="TravelImageContainer">
           <div className="TravelUpperContainerImage">
-            <img className="ImageStyle" src={image} alt="" />
+            <img className="ImageStyle" src={fetureImage} alt="" />
           </div>
           <div className="TravelLowerImageContainer">
-            <div className="SmallImage">
-              <img className="ImageStyle" src={image1} alt="" />
-            </div>
-            <div className="SmallImage">
+            {images.map((items,index)=>{
+              return(
+                <div className="SmallImage">
+                <img className="ImageStyle" src={items.travelsmall} alt="" onClick={onImageClick}/>
+              </div>
+              )
+            })}
+           
+            {/* <div className="SmallImage">
               <img className="ImageStyle" src={image2} alt="" />
             </div>
             <div className="SmallImage">
               <img className="ImageStyle" src={image3} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="TravelContainDetails">
